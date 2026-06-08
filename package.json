@@ -1,0 +1,11 @@
+{
+  "name": "inforhealth-portal",
+  "private": true,
+  "scripts": {
+    "build": "bash build.sh",
+    "deploy": "wrangler deploy"
+  },
+  "devDependencies": {
+    "wrangler": "^3.114.0"
+  }
+}
