@@ -1,0 +1,57 @@
+# Formação e Mentoria Auditoria Interna e Gestão da Qualidade
+
+> Fonte: https://edu.inforhealth.com.br/formacao-mentoria-auditoria-gestao-qualid/
+
+**Modalidade:** Mentoria
+
+![Mentoria Auditoria Interna e Gestão da Qualidade em Saúde](../imagens/cursos/mentoria-auditoria-qualidade.png)
+
+## Resumo
+
+A maioria dos cursos ensina o que a norma diz. Esta mentoria ensina como o auditor pensa, interpreta, investiga e atua.
+
+## Seções da página
+
+- Auditoria Interna e Gestão da Qualidade em Saúde
+- Sem excesso de teoria.
+- ✔ Com direcionamento claro para você saber exatamente o que fazer.
+- Ao final, você não estará apenas com mais conhecimento.
+- por R$ 1.992
+- ou 12x de R$ 201,14
+- Dúvidas Frequentes sobre nosso Curso
+
+## Conteúdo
+
+Sim, é somente solicitar a inscrição através dos nossos canais de comunicação.
+
+Sim! Certificado emitido em conformidade com a Lei de Diretrizes e Bases da Educação nº 9394/96; Decreto nº 5.154/04; Deliberação CEE 14/97 (Indicação CEE 14/97), Decreto Presidencial N° 5.154, de 23 de julho de 2004, Art. 1° e 3° e PORTARIA Nº 008, de 25/06/2002 publicado no DIÁRIO OFICIAL – SC – Nº 16.935 – 27.06.2002.
+
+Pix, Boleto e Cartão de Crédito (parcelamento em até 12x). Para outras opções de pagamento, pedimos que entre em contato através do e-mail [email protected] ou pelo whatsapp .
+
+Após a confirmação do pagamento, receberá o acesso a plataforma Kiwify, onde terá acesso aos materiais e link de acesso as Aulas Ao Vivo.
+
+Sim. Em sua área de membro, você terá o acesso aos materiais complementares .
+
+Conheça nossas Políticas no link: https://edu.inforhealth.com.br/policita-cancelamento/
+
+Sim, é somente solicitar a inscrição de 04 ou mais participantes através dos nossos canais de comunicação e concedemos 20% de desconto no valor total.
+
+Você pode solicitar a Nota Fiscal enviando um e-mail para [email protected] . br , informando os dados de pessoa física ou da empresa.
+
+## Programação / Tópicos
+
+- mentorias individuais (1:1)
+- Mais do que aprender auditoria, você vai desenvolver uma atuação estratégica, capaz de gerar valor real para a instituição e posicionar você como um profissional diferenciado no mercado.
+- Sendo uma empresa, é possível inscrever mais de 1 participante?
+- Sim, é somente solicitar a inscrição através dos nossos canais de comunicação.
+- O Curso possui Certificado?
+- Quais as Formas de Pagamento?
+- Pix, Boleto e Cartão de Crédito (parcelamento em até 12x). Para outras opções de pagamento, pedimos que entre em contato através do e-mail [email protected] ou pelo whatsapp .
+- Como receberei o acesso a Plataforma?
+- Após a confirmação do pagamento, receberá o acesso a plataforma Kiwify, onde terá acesso aos materiais e link de acesso as Aulas Ao Vivo.
+- Terei acesso ao Material do curso?
+- Sim. Em sua área de membro, você terá o acesso aos materiais complementares .
+- Política de Cancelamento e base regulamentar dos cursos
+- Conheça nossas Políticas no link: https://edu.inforhealth.com.br/policita-cancelamento/
+- Sendo uma empresa, é possível inscrever mais participantes e obter desconto?
+- Sim, é somente solicitar a inscrição de 04 ou mais participantes através dos nossos canais de comunicação e concedemos 20% de desconto no valor total.

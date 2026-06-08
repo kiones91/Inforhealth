@@ -1,0 +1,60 @@
+{
+  "site_url": "https://edu.inforhealth.com.br",
+  "site_name": "Inforhealth Educação",
+  "default_og_image": "/assets/imagens/institucional/logo-inforhealth-cursos.png",
+  "locale": "pt_BR",
+  "ga4_measurement_id": "",
+  "organization": {
+    "name": "Inforhealth Educação e Excelência em Saúde",
+    "legal_name": "Inforhealth Educação e Excelência em Saúde",
+    "url": "https://edu.inforhealth.com.br",
+    "logo": "https://edu.inforhealth.com.br/assets/imagens/institucional/logo-inforhealth-2020.png",
+    "email": "contato@inforhealth.com.br",
+    "telephone": "+55-19-99777-3084",
+    "address_locality": "Campinas",
+    "address_region": "SP",
+    "address_country": "BR",
+    "postal_code": "13000-000",
+    "latitude": -22.9099,
+    "longitude": -47.0626,
+    "founding_date": "2007",
+    "price_range": "$$",
+    "maps_url": "https://maps.google.com/?q=Inforhealth+Educação+Campinas+SP",
+    "google_business_url": "https://www.google.com/maps/search/Inforhealth+Educação+Campinas"
+  },
+  "social": {
+    "instagram": "https://www.instagram.com/inforhealth_edu",
+    "linkedin": "https://www.linkedin.com/company/inforhealth-educacao-excelencia-saude",
+    "facebook": "https://www.facebook.com/inforhealth",
+    "youtube": "https://www.youtube.com/@inforhealth_edu",
+    "whatsapp": "https://wa.me/5519997773084"
+  },
+  "sitemap": {
+    "changefreq": {
+      "home": "weekly",
+      "cursos": "weekly",
+      "curso": "monthly",
+      "blog_list": "weekly",
+      "blog_article": "monthly",
+      "institutional": "monthly"
+    },
+    "priority": {
+      "home": "1.0",
+      "cursos": "0.9",
+      "curso": "0.8",
+      "blog_list": "0.7",
+      "blog_article": "0.7",
+      "institutional": "0.6"
+    }
+  },
+  "page_defaults": {
+    "equipe.html": {
+      "title": "Equipe Docente — Inforhealth Educação",
+      "description": "Equipe docente Inforhealth: especialistas em gestão hospitalar, qualidade, ONA, DRG e saúde suplementar com experiência em instituições de referência."
+    },
+    "design_system.html": {
+      "robots": "noindex, nofollow",
+      "description": "Design system interno Inforhealth."
+    }
+  }
+}
