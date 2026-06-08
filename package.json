@@ -2,8 +2,8 @@
   "name": "inforhealth-portal",
   "private": true,
   "scripts": {
-    "build": "bash build.sh",
-    "deploy": "wrangler deploy"
+    "build": "node tools/deploy-build.mjs",
+    "deploy": "npm run build && wrangler deploy"
   },
   "devDependencies": {
     "wrangler": "^3.114.0"

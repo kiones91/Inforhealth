@@ -29,11 +29,12 @@ O `AAAA 100::` é um placeholder da Cloudflare — só resolve tráfego **depois
 |-------|-------|
 | **Project name** | `inforhealth` |
 | **Production branch** | `main` |
-| **Build command** | `npm install && npm run build` |
-| **Deployment command** | `npx wrangler deploy` |
-| **Non-production deploy** | `npx wrangler deploy` *(ou deixe igual)* |
+| **Build command** | *(deixe vazio)* ou `npm install` |
+| **Deployment command** | `npm install && npm run deploy` |
+| **Non-production deploy** | `npm install && npm run deploy` |
 
-> Se `npm install` falhar por timeout, use: `bash build.sh` como build command.
+> `npm run deploy` = build (`dist/`) + `wrangler deploy` no mesmo passo.  
+> **Importante:** `dist/` nao pode estar no `.gitignore` — wrangler ignora arquivos gitignored.
 | **Path** (avançado) | `/` *(raiz do repo)* |
 
 O `wrangler.toml` na raiz aponta `[assets]` → `dist/`.

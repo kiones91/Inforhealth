@@ -11,8 +11,8 @@ venv/
 node_modules/
 tools/frontend/node_modules/
 
-# Deploy
-dist/
+# dist/ NAO ignorar — wrangler deploy usa .gitignore e pula assets se dist/ estiver aqui
+# (gerado no CI; nao commitar dist/ manualmente)
 
 # Ferramentas (artefatos temporários)
 tools/_course-cards-v2.html
