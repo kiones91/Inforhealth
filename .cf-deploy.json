@@ -1,5 +1,14 @@
 {
   "build_command": "",
   "deploy_command": "npm ci && npx wrangler deploy",
-  "comment": "Painel: Workers > inforhealth > Settings > Build. Deixe Build vazio; dist/ ja esta no Git (317 arquivos). O token do Git da Cloudflare faz o deploy — nao precisa de API token manual."
+  "production_branch": "main",
+  "root_directory": "/",
+  "custom_domain": "inforhealth.buffallos.com.br",
+  "dns_record": {
+    "type": "AAAA",
+    "name": "inforhealth",
+    "content": "100::",
+    "proxied": true
+  },
+  "comment": "Workers > inforhealth > Settings > Build. Build vazio; Deploy: npm ci && npx wrangler deploy. DNS AAAA 100:: antes de criar o Worker. Ver docs/DEPLOY-CLOUDFLARE.md"
 }
