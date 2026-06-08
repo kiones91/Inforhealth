@@ -2,7 +2,7 @@
 
 > Repositório: [kiones91/Inforhealth](https://github.com/kiones91/Inforhealth)  
 > URL de homologação: https://inforhealth.buffallos.com.br/  
-> Stack: **Worker com assets estáticos** (`wrangler.toml` → `dist/`), **não** Cloudflare Pages.
+> Stack: **Worker com assets estáticos** (`wrangler.jsonc` → `dist/`), **não** Cloudflare Pages. Requer **Wrangler 4+**.
 
 ---
 
@@ -60,7 +60,7 @@ No painel Cloudflare:
 | **Production branch** | `main` |
 | **Root directory** | `/` *(raiz do repo)* |
 | **Build command** | *(deixe vazio)* |
-| **Deploy command** | `npm ci && npx wrangler deploy` |
+| **Deploy command** | `npm ci && FORCE_BUILD=1 npm run build && npx wrangler deploy` |
 
 4. **Environment variables:** nenhuma obrigatória.
 5. **API Token:** a Cloudflare cria automaticamente ao conectar o Git — não precisa token manual.
@@ -68,13 +68,14 @@ No painel Cloudflare:
 
 ### O que o deploy faz
 
-- `wrangler.toml` na raiz define `name = "inforhealth"` e `[assets] directory = "dist"`.
+- `wrangler.jsonc` na raiz define `name = "inforhealth"` e `assets.directory = "./dist"`.
 - A pasta `dist/` (317 arquivos) está versionada no Git — o wrangler publica esses assets.
 - `dist/` **não pode** estar no `.gitignore` (wrangler ignora arquivos gitignored).
 
 ### Log de sucesso esperado
 
 ```
+Read 361 files from the assets directory .../dist
 Uploaded XXX assets
 Deployed inforhealth triggers...
 ```
@@ -190,8 +191,9 @@ Os canonicals em `site/` hoje apontam para `edu.inforhealth.com.br` (correto par
 | Problema | Causa provável | Solução |
 |----------|----------------|---------|
 | 522 / erro de origem | Worker não deployou | Ver log em Deployments |
+| Site sem CSS/JS (HTML cru) | Wrangler 3 não publica assets | Atualizar para Wrangler 4+; log deve mostrar `Read 361 files from the assets directory` |
 | 0 assets uploaded | `dist/` no `.gitignore` | Remover `dist/` do gitignore e commitar |
 | DNS não resolve | Registro ausente ou DNS only | Conferir `AAAA 100::` proxied |
-| 404 em `/cursos/foo` | URL sem `.html` | `wrangler.toml` já tem `html_handling = "auto-trailing-slash"` |
+| 404 em `/cursos/foo` | URL sem `.html` | `wrangler.jsonc` já tem `html_handling = "auto-trailing-slash"` |
 | Imagens quebradas | Build sem `assets/` | `FORCE_BUILD=1 npm run build` |
 | Dois deploys conflitando | CF Git + GitHub Actions | Desativar um dos dois |
