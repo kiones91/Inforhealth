@@ -11,6 +11,9 @@ venv/
 node_modules/
 tools/frontend/node_modules/
 
+# Deploy
+dist/
+
 # Ferramentas (artefatos temporários)
 tools/_course-cards-v2.html
 

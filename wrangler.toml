@@ -1,0 +1,6 @@
+name = "inforhealth"
+compatibility_date = "2024-06-01"
+
+# Site estático: build gera ./dist via tools/deploy-build.py
+[assets]
+directory = "dist"
