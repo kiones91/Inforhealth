@@ -20,6 +20,18 @@ async function countFiles(dir) {
 }
 
 async function main() {
+  const index = join(DIST, "index.html");
+  if (process.env.FORCE_BUILD !== "1") {
+    try {
+      await stat(index);
+      const total = await countFiles(DIST);
+      console.log(`dist/ ja existe (${total} arquivos) — pulando rebuild`);
+      return;
+    } catch {
+      /* gera dist */
+    }
+  }
+
   await rm(DIST, { recursive: true, force: true });
   await mkdir(DIST, { recursive: true });
   await cp(SITE, DIST, { recursive: true });

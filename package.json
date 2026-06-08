@@ -3,7 +3,9 @@
   "private": true,
   "scripts": {
     "build": "node tools/deploy-build.mjs",
-    "deploy": "npm run build && wrangler deploy"
+    "build:ci": "node tools/deploy-build.mjs",
+    "deploy": "npm run build && wrangler deploy",
+    "deploy:ci": "npx wrangler deploy"
   },
   "devDependencies": {
     "wrangler": "^3.114.0"

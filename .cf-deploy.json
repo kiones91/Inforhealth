@@ -1,5 +1,5 @@
 {
-  "build_command": "",
+  "build_command": "npm install && npm run build:ci",
   "deploy_command": "npx wrangler deploy",
-  "comment": "dist/ versionado no repo — deploy sobe assets sem depender do build no CI"
+  "comment": "dist/ versionado no Git. build:ci preserva dist/ se ja existir. Ajuste estes valores em Workers > inforhealth > Settings > Build."
 }
