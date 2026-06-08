@@ -1,0 +1,16 @@
+# Inforhealth Educação — robots.txt
+# https://edu.inforhealth.com.br
+
+User-agent: *
+Allow: /
+
+# Páginas internas / redirecionamentos (também com noindex no HTML)
+Disallow: /design_system.html
+Disallow: /blog-artigo.html
+Disallow: /blog-artigo-drg.html
+Disallow: /blog-artigo-ona.html
+Disallow: /blog-artigo-seguranca.html
+Disallow: /blog/
+
+# Sitemap
+Sitemap: https://edu.inforhealth.com.br/sitemap.xml

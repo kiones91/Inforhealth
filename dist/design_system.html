@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="pt-BR">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Inforhealth — Design System</title>
+        <!-- SEO:BEGIN -->
+  <link rel="canonical" href="https://edu.inforhealth.com.br/design_system.html">
+  <meta name="robots" content="noindex, nofollow">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Inforhealth Educação">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="Inforhealth — Design System">
+  <meta property="og:description" content="Design system interno Inforhealth.">
+  <meta property="og:url" content="https://edu.inforhealth.com.br/design_system.html">
+  <meta property="og:image" content="https://edu.inforhealth.com.br/assets/imagens/institucional/logo-inforhealth-cursos.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Inforhealth — Design System">
+  <meta name="twitter:description" content="Design system interno Inforhealth.">
+  <meta name="twitter:image" content="https://edu.inforhealth.com.br/assets/imagens/institucional/logo-inforhealth-cursos.png">
+<!-- SEO:END -->
+<!-- ANALYTICS:BEGIN -->
+  <!-- GA4: defina ga4_measurement_id em tools/seo/seo-config.json -->
+<!-- ANALYTICS:END -->
+  <meta name="description" content="Design system interno Inforhealth.">>>>
+<script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+  <link href="css/tailwind.min.css" rel="stylesheet"/>
+  <link href="css/design-system.css" rel="stylesheet"/>
+<style>
+    body { font-family: 'Inter', sans-serif; }
+    h1, h2, h3, h4, h5, h6 { font-family: 'Plus Jakarta Sans', sans-serif; }
+    iconify-icon { display: inline-flex; vertical-align: middle; }
+  </style>
+</head>
+<body class="min-h-screen bg-stone-200 text-slate-900 antialiased selection:bg-ih-accent/30 selection:text-ih-primary p-3 lg:p-6">
+
+<main class="w-full max-w-[1400px] mx-auto bg-white rounded-[2.5rem] shadow-2xl overflow-hidden relative">
+
+  <!-- Navbar -->
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-ih-primary/10">
+    <nav class="flex items-center justify-between px-6 lg:px-12 py-4">
+      <a href="index.html" class="flex items-center gap-2 group">
+        <img src="../assets/imagens/institucional/logo-inforhealth-2020.png" alt="Inforhealth — Educação e Excelência em Saúde" class="h-8 w-auto transition-transform group-hover:scale-105"/>
+        <span class="text-[0.6rem] font-mono uppercase tracking-[0.2em] text-slate-300 border-l border-slate-200 pl-2 hidden sm:block">Design System</span>
+      </a>
+      <div class="site-nav-desktop hidden lg:flex items-center gap-5">
+        <a class="text-[0.65rem] font-semibold uppercase tracking-[0.2em] text-slate-400 hover:text-ih-primary transition-colors" href="#hero">Hero</a>
+        <a class="text-[0.65rem] font-semibold uppercase tracking-[0.2em] text-slate-400 hover:text-ih-primary transition-colors" href="#typography">Tipografia</a>
+        <a class="text-[0.65rem] font-semibold uppercase tracking-[0.2em] text-slate-400 hover:text-ih-primary transition-colors" href="#colors">Cores</a>
+        <a class="text-[0.65rem] font-semibold uppercase tracking-[0.2em] text-slate-400 hover:text-ih-primary transition-colors" href="#components">Componentes</a>
+        <a class="text-[0.65rem] font-semibold uppercase tracking-[0.2em] text-slate-400 hover:text-ih-primary transition-colors" href="#icons">Ícones</a>
+        <a class="text-[0.65rem] font-semibold uppercase tracking-[0.2em] text-slate-400 hover:text-ih-primary transition-colors" href="#motion">Animações</a>
+      </div>
+      <span class="text-[0.6rem] font-mono uppercase tracking-widest text-ih-accent bg-ih-accent/10 px-3 py-1 rounded-full">v1.0</span>
+    </nav>
+  </header>
+
+  <!-- ═══ 1. HERO ═══ -->
+  <section id="hero" class="relative min-h-[85vh] grid grid-cols-1 lg:grid-cols-2 overflow-hidden ds-grid-bg">
+    <div class="beam-h top-1/4" style="animation-delay: 0s;"></div>
+    <div class="beam-h top-2/3" style="animation-delay: 4s;"></div>
+    <div class="beam-v left-1/4" style="animation-delay: 2s;"></div>
+    <div class="orb w-72 h-72 bg-ih-accent/20 -top-20 -left-20"></div>
+    <div class="orb w-96 h-96 bg-ih-primary/10 top-1/2 right-0" style="animation-delay: -4s;"></div>
+    <div class="orb w-48 h-48 bg-ih-orange/15 bottom-10 left-1/3" style="animation-delay: -2s;"></div>
+
+    <!-- Left: Typography showcase -->
+    <div class="relative z-10 flex flex-col justify-center px-8 lg:px-16 xl:px-20 py-16 lg:py-0">
+      <div class="inline-flex items-center gap-2 border-gradient rounded-full px-4 py-1.5 bg-white/80 backdrop-blur-sm w-fit mb-8 [animation:fadeSlideIn_1s_ease-out_both] animate-on-scroll">
+        <span class="flex h-2 w-2 relative">
+          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-ih-accent opacity-60"></span>
+          <span class="relative inline-flex rounded-full h-2 w-2 bg-ih-accent"></span>
+        </span>
+        <span class="text-[0.65rem] font-semibold uppercase tracking-[0.25em] text-slate-500">Design System · Portal Educação</span>
+      </div>
+
+      <div class="relative mb-4 [animation:fadeSlideIn_1s_ease-out_0.15s_both] animate-on-scroll">
+        <h1 class="font-display font-bold tracking-tighter leading-[0.82] text-6xl sm:text-7xl lg:text-8xl xl:text-[7.5rem]">
+          <span class="block text-transparent-gradient text-glow">INFOR</span>
+          <span class="block text-transparent-gradient-light text-glow" style="animation-delay: 0.5s;">HEALTH</span>
+        </h1>
+        <div class="absolute -bottom-3 left-2 lg:left-4 inline-flex items-center gap-2 bg-ih-primary text-white px-4 py-2 rounded-full transform -rotate-2 hover:rotate-0 transition-transform cursor-default shadow-xl z-20 [animation:fadeSlideIn_1s_ease-out_0.4s_both] animate-on-scroll">
+          <iconify-icon icon="solar:heart-pulse-linear" width="14"></iconify-icon>
+          <span class="text-[0.6rem] font-bold uppercase tracking-widest">Saúde · Educação · Excelência</span>
+        </div>
+      </div>
+
+      <p class="text-lg text-slate-600 max-w-md leading-relaxed mb-8 [animation:fadeSlideIn_1s_ease-out_0.55s_both] animate-on-scroll">
+        Linguagem visual para o portal de cursos hospitalares — tipografia, cores, componentes e motion unificados.
+      </p>
+
+      <div class="flex flex-wrap gap-4 mb-12 [animation:fadeSlideIn_1s_ease-out_0.7s_both] animate-on-scroll">
+        <div class="btn-glow-wrap">
+          <button class="relative z-10 inline-flex items-center gap-2 bg-ih-primary hover:bg-ih-secondary text-white text-sm font-medium px-6 py-3 rounded-full transition-all hover:scale-[1.02] active:scale-[0.98] shadow-lg shadow-ih-primary/20">
+            <iconify-icon icon="solar:play-circle-linear" width="18"></iconify-icon>
+            Explorar componentes
+          </button>
+          <span class="btn-glow" aria-hidden="true"></span>
+        </div>
+        <button class="border-gradient inline-flex items-center gap-2 bg-white/90 backdrop-blur text-ih-primary text-sm font-medium px-6 py-3 rounded-full hover:bg-ih-muted transition-colors">
+          <iconify-icon icon="solar:document-linear" width="18"></iconify-icon>
+          Ver tipografia
+        </button>
+      </div>
+
+      <!-- Mini stats -->
+      <div class="grid grid-cols-3 gap-4 max-w-md [animation:fadeSlideIn_1s_ease-out_0.85s_both] animate-on-scroll">
+        <div class="border-gradient rounded-2xl bg-white/70 backdrop-blur p-4 text-center">
+          <div class="font-display text-2xl font-bold text-transparent-gradient">190+</div>
+          <div class="text-[0.65rem] uppercase tracking-wider text-slate-400 mt-1">Cursos</div>
+        </div>
+        <div class="border-gradient rounded-2xl bg-white/70 backdrop-blur p-4 text-center">
+          <div class="font-display text-2xl font-bold text-ih-accent">6k+</div>
+          <div class="text-[0.65rem] uppercase tracking-wider text-slate-400 mt-1">Alunos</div>
+        </div>
+        <div class="border-gradient rounded-2xl bg-white/70 backdrop-blur p-4 text-center">
+          <div class="font-display text-2xl font-bold text-ih-orange">95%</div>
+          <div class="text-[0.65rem] uppercase tracking-wider text-slate-400 mt-1">Satisfação</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right: Visual -->
+    <div class="relative h-[50vh] lg:h-auto overflow-hidden lg:rounded-tl-[4rem] group bg-gradient-to-br from-ih-primary via-ih-secondary to-ih-primary">
+      <div class="absolute inset-0 ds-grid-bg opacity-40 transition-transform duration-700 group-hover:scale-105 origin-center"></div>
+      <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_30%_20%,rgba(22,168,154,0.35),transparent_50%),radial-gradient(ellipse_at_70%_80%,rgba(47,128,181,0.25),transparent_50%)]"></div>
+      <div class="absolute inset-0 bg-gradient-to-t from-ih-primary/80 via-transparent to-white/10"></div>
+
+      <div class="absolute top-1/3 left-8 lg:left-12 transform -translate-y-1/2 [animation:fadeSlideIn_1s_ease-out_0.5s_both] animate-on-scroll">
+        <div class="flex items-center justify-center w-14 h-14 rounded-full border border-white/40 backdrop-blur-md text-white animate-pulse">
+          <iconify-icon icon="solar:stethoscope-linear" width="24"></iconify-icon>
+        </div>
+      </div>
+
+      <div class="absolute bottom-16 right-8 lg:right-12 space-y-3">
+        <div class="px-4 py-2 rounded-full border border-white/40 bg-white/15 backdrop-blur-xl text-white text-[0.6rem] font-semibold uppercase tracking-widest hover:bg-white/25 transition-colors [animation:fadeSlideIn_1s_ease-out_0.6s_both] animate-on-scroll">
+          Documentado
+        </div>
+        <div class="border-gradient rounded-xl bg-white/10 backdrop-blur p-4 max-w-[200px] [animation:fadeSlideIn_1s_ease-out_0.75s_both] animate-on-scroll">
+          <div class="text-white/90 text-xs font-medium">Portal Educação</div>
+          <div class="text-white/60 text-[0.65rem] mt-1">Cursos · Eventos · In Company</div>
+        </div>
+      </div>
+
+      <div class="transform backdrop-blur-sm w-16 h-16 border-ih-accent/40 border-2 rounded-lg absolute top-1/4 right-1/4 rotate-12 opacity-80"></div>
+    </div>
+  </section>
+
+  <!-- ═══ 2. TIPOGRAFIA ═══ -->
+  <section id="typography" class="ds-section px-8 lg:px-16 xl:px-24 py-20 border-b border-ih-primary/10 relative ds-grid-bg">
+    <div class="beam-v right-1/3 top-0" style="animation-delay: 1s;"></div>
+    <div class="reveal mb-16">
+      <span class="text-[0.65rem] font-semibold uppercase tracking-[0.25em] text-slate-400">02 · Tipografia</span>
+      <h2 class="font-display text-3xl lg:text-4xl font-semibold tracking-tight text-ih-primary mt-2">Escala tipográfica &amp; hierarquia</h2>
+      <p class="text-slate-500 mt-3 max-w-2xl">Primary: Plus Jakarta Sans (display/headings). Body: Inter. Mono: Geist Mono. Carregamento via Google Fonts CDN — pesos 300–800.</p>
+    </div>
+
+    <div class="space-y-10 reveal">
+      <!-- H1 -->
+      <div class="flex flex-col lg:flex-row lg:items-start justify-between gap-6 pb-10 border-b border-slate-200">
+        <div class="flex-1">
+          <p class="text-[0.65rem] font-semibold uppercase tracking-[0.25em] text-slate-400 mb-3">Heading 1</p>
+          <h1 class="font-display text-5xl lg:text-7xl xl:text-8xl font-bold tracking-tighter leading-[0.85] text-transparent-gradient">Educação em Saúde</h1>
+        </div>
+        <div class="spec-mono text-right shrink-0 space-y-1">
+          <div>font-family: Plus Jakarta Sans</div>
+          <div>font-weight: 700</div>
+          <div>font-size: 72px / 96px / 128px</div>
+          <div>line-height: 0.85</div>
+          <div>letter-spacing: -0.04em</div>
+          <div>text-transform: none</div>
+        </div>
+      </div>
+
+      <!-- H2 -->
+      <div class="flex flex-col lg:flex-row lg:items-start justify-between gap-6 pb-10 border-b border-slate-200">
+        <div class="flex-1">
+          <p class="text-[0.65rem] font-semibold uppercase tracking-[0.25em] text-slate-400 mb-3">Heading 2</p>
+          <h2 class="font-display text-3xl lg:text-4xl font-semibold tracking-tight text-ih-primary leading-tight">Capacitação para o setor hospitalar</h2>
+        </div>
+        <div class="spec-mono text-right shrink-0">
+          <div>font-weight: 600 · 36px/40px</div>
+          <div>line-height: 1.15 · tracking: -0.02em</div>
+        </div>
+      </div>
+
+      <!-- H3–H6 grid -->
+      <div class="grid md:grid-cols-2 gap-8 pb-10 border-b border-slate-200">
+        <div>
+          <p class="text-[0.65rem] font-semibold uppercase tracking-[0.25em] text-slate-400 mb-2">Heading 3</p>
+          <h3 class="font-display text-2xl font-semibold text-ih-primary">Modalidades de ensino</h3>
+          <p class="spec-mono mt-2">600 · 24px · lh 1.3</p>
+        </div>
+        <div>
+          <p class="text-[0.65rem] font-semibold uppercase tracking-[0.25em] text-slate-400 mb-2">Heading 4</p>
+          <h4 class="font-display text-xl font-semibold text-slate-800">Curso em destaque</h4>
+          <p class="spec-mono mt-2">600 · 20px · lh 1.35</p>
+        </div>
+        <div>
+          <p class="text-[0.65rem] font-semibold uppercase tracking-[0.25em] text-slate-400 mb-2">Heading 5</p>
+          <h5 class="font-display text-lg font-medium text-slate-700">Módulo introdutório</h5>
+          <p class="spec-mono mt-2">500 · 18px · lh 1.4</p>
+        </div>
+        <div>
+          <p class="text-[0.65rem] font-semibold uppercase tracking-[0.25em] text-slate-400 mb-2">Heading 6</p>
+          <h6 class="font-display text-base font-medium text-slate-600 uppercase tracking-wide">Label de seção</h6>
+          <p class="spec-mono mt-2">500 · 16px · uppercase · tracking 0.05em</p>
+        </div>
+      </div>
+
+      <!-- Body scale -->
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="border-gradient rounded-2xl p-6 bg-ih-muted/50">
+          <p class="text-[0.65rem] font-semibold uppercase tracking-[0.25em] text-slate-400 mb-3">Body Large</p>
+          <p class="text-lg text-slate-700 leading-relaxed">Texto introdutório para hero e seções principais. Inter 400 · 18px · lh 1.65.</p>
+        </div>
+        <div class="border-gradient rounded-2xl p-6 bg-white">
+          <p class="text-[0.65rem] font-semibold uppercase tracking-[0.25em] text-slate-400 mb-3">Body</p>
+          <p class="text-base text-slate-600 leading-relaxed">Parágrafo padrão para conteúdo editorial e cards. Inter 400 · 16px · lh 1.6.</p>
+        </div>
+        <div class="border-gradient rounded-2xl p-6 bg-white">
+          <p class="text-[0.65rem] font-semibold uppercase tracking-[0.25em] text-slate-400 mb-3">Body Small</p>
+          <p class="text-sm text-slate-500 leading-relaxed">Metadados e descrições secundárias. Inter 400 · 14px · lh 1.55.</p>
+        </div>
+      </div>
+
+      <div class="flex flex-wrap gap-8 pt-6">
+        <div>
+          <span class="text-[0.65rem] font-bold uppercase tracking-[0.2em] text-ih-accent">Caption</span>
+          <p class="text-xs text-slate-400 mt-1">12px · tracking 0.02em · slate-400</p>
+        </div>
+        <div>
+          <span class="text-sm font-medium text-ih-primary">Label</span>
+          <p class="text-xs text-slate-400 mt-1">14px · medium · primary</p>
+        </div>
+        <div>
+          <p class="text-xs text-slate-400 italic">Helper text — dica contextual abaixo de inputs</p>
+          <p class="spec-mono mt-1">12px · italic · slate-400</p>
+        </div>
+        <div>
+          <code class="font-mono text-sm bg-slate-100 px-2 py-1 rounded text-ih-primary">Geist Mono · código</code>
+          <p class="spec-mono mt-1">14px · mono stack</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ 3. CORES ═══ -->
+  <section id="colors" class="ds-section px-8 lg:px-16 xl:px-24 py-20 border-b border-ih-primary/10 bg-ih-muted/30 relative overflow-hidden">
+    <div class="orb w-64 h-64 bg-ih-accent/10 -right-32 top-1/2"></div>
+    <div class="reveal mb-16">
+      <span class="text-[0.65rem] font-semibold uppercase tracking-[0.25em] text-slate-400">03 · Cores</span>
+      <h2 class="font-display text-3xl font-semibold tracking-tight text-ih-primary mt-2">Sistema de cores Inforhealth</h2>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 reveal">
+      <!-- Primary -->
+      <div class="border-gradient rounded-2xl overflow-hidden bg-white">
+        <div class="h-24 bg-ih-primary"></div>
+        <div class="p-4 space-y-1 spec-mono">
+          <div class="font-display font-semibold text-sm text-slate-800 not-italic">Primary</div>
+          <div>#09314d · rgb(9,49,77)</div>
+          <div>hsl(203, 79%, 17%)</div>
+          <div class="text-xs mt-2 text-slate-500">text · bg · border · AAA on white</div>
+        </div>
+      </div>
+      <div class="border-gradient rounded-2xl overflow-hidden bg-white">
+        <div class="h-24 bg-ih-secondary"></div>
+        <div class="p-4 space-y-1 spec-mono">
+          <div class="font-display font-semibold text-sm text-slate-800 not-italic">Secondary</div>
+          <div>#2f80b5 · rgb(47,128,181)</div>
+          <div>hsl(203, 59%, 45%) · azul do logo</div>
+        </div>
+      </div>
+      <div class="border-gradient rounded-2xl overflow-hidden bg-white">
+        <div class="h-24 bg-ih-accent"></div>
+        <div class="p-4 space-y-1 spec-mono">
+          <div class="font-display font-semibold text-sm text-slate-800 not-italic">Accent</div>
+          <div>#16a89a · rgb(22,168,154)</div>
+          <div>hsl(174, 77%, 37%) · teal do logo · CTA</div>
+        </div>
+      </div>
+      <div class="border-gradient rounded-2xl overflow-hidden bg-white">
+        <div class="h-24 bg-ih-orange"></div>
+        <div class="p-4 space-y-1 spec-mono">
+          <div class="font-display font-semibold text-sm text-slate-800 not-italic">Decorative</div>
+          <div>#ff8e2b · rgb(255,142,43)</div>
+          <div>highlights · badges · warmth</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Opacity & semantic -->
+    <div class="mt-12 grid lg:grid-cols-2 gap-10 reveal">
+      <div>
+        <h3 class="font-display font-semibold text-lg mb-4">Variantes de opacidade</h3>
+        <div class="flex flex-wrap gap-3">
+          <div class="w-16 h-16 rounded-xl bg-ih-primary/10 border border-ih-primary/20 flex items-end justify-center pb-1"><span class="text-[0.6rem] spec-mono">10%</span></div>
+          <div class="w-16 h-16 rounded-xl bg-ih-primary/20 flex items-end justify-center pb-1"><span class="text-[0.6rem] spec-mono">20%</span></div>
+          <div class="w-16 h-16 rounded-xl bg-ih-primary/40 flex items-end justify-center pb-1"><span class="text-[0.6rem] spec-mono text-white">40%</span></div>
+          <div class="w-16 h-16 rounded-xl bg-ih-primary/60 flex items-end justify-center pb-1"><span class="text-[0.6rem] spec-mono text-white">60%</span></div>
+          <div class="w-16 h-16 rounded-xl bg-ih-primary flex items-end justify-center pb-1"><span class="text-[0.6rem] spec-mono text-white">100%</span></div>
+        </div>
+      </div>
+      <div>
+        <h3 class="font-display font-semibold text-lg mb-4">Gradiente de marca</h3>
+        <div class="h-20 rounded-2xl bg-gradient-to-r from-ih-primary via-ih-accent to-ih-secondary border-gradient"></div>
+        <p class="spec-mono mt-2">Uso: lettering transparente, bordas animadas, hero overlays</p>
+      </div>
+    </div>
+
+    <!-- Semantic table -->
+    <div class="mt-12 overflow-x-auto reveal">
+      <table class="w-full text-sm">
+        <thead>
+          <tr class="border-b border-slate-200 text-left">
+            <th class="py-3 pr-4 font-display font-semibold">Role</th>
+            <th class="py-3 pr-4">Text</th>
+            <th class="py-3 pr-4">Background</th>
+            <th class="py-3 pr-4">Border</th>
+            <th class="py-3 pr-4">Hover</th>
+            <th class="py-3">Disabled</th>
+          </tr>
+        </thead>
+        <tbody class="spec-mono">
+          <tr class="border-b border-slate-100">
+            <td class="py-3 font-display font-medium text-slate-800 not-italic">Primary btn</td>
+            <td class="text-white">#fff</td>
+            <td>#09314d</td>
+            <td>transparent</td>
+            <td>#2f80b5</td>
+            <td>opacity 50%</td>
+          </tr>
+          <tr class="border-b border-slate-100">
+            <td class="py-3 font-display font-medium text-slate-800 not-italic">Accent btn</td>
+            <td>#fff</td>
+            <td>#16a89a</td>
+            <td>transparent</td>
+            <td>#118a7e</td>
+            <td>opacity 50%</td>
+          </tr>
+          <tr class="border-b border-slate-100">
+            <td class="py-3 font-display font-medium text-slate-800 not-italic">Neutral</td>
+            <td>#475569</td>
+            <td>#f7f9fb</td>
+            <td>rgba(9,49,77,.12)</td>
+            <td>#e2e8f0</td>
+            <td>text slate-300</td>
+          </tr>
+          <tr>
+            <td class="py-3 font-display font-medium text-slate-800 not-italic">Feedback error</td>
+            <td>#dc2626</td>
+            <td>#fef2f2</td>
+            <td>#fecaca</td>
+            <td>—</td>
+            <td>—</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ═══ 4. COMPONENTES ═══ -->
+  <section id="components" class="ds-section px-8 lg:px-16 xl:px-24 py-20 border-b border-ih-primary/10 relative ds-grid-bg">
+    <div class="reveal mb-16">
+      <span class="text-[0.65rem] font-semibold uppercase tracking-[0.25em] text-slate-400">04 · Componentes UI</span>
+      <h2 class="font-display text-3xl font-semibold tracking-tight text-ih-primary mt-2">Biblioteca com animações</h2>
+    </div>
+
+    <!-- Buttons -->
+    <div class="mb-16 reveal">
+      <h3 class="font-display text-xl font-semibold mb-6 flex items-center gap-2">
+        <iconify-icon icon="solar:cursor-square-linear" class="text-ih-accent"></iconify-icon>
+        Buttons
+      </h3>
+      <div class="flex flex-wrap gap-4 items-center">
+        <div class="btn-glow-wrap">
+          <button class="bg-ih-primary hover:bg-ih-secondary text-white text-sm font-medium px-5 py-2.5 rounded-full transition-all hover:scale-[1.02]">Primary</button>
+          <span class="btn-glow"></span>
+        </div>
+        <button class="bg-ih-accent hover:bg-ih-accent-dark text-white text-sm font-medium px-5 py-2.5 rounded-full transition-all">Accent</button>
+        <button class="border-gradient bg-white text-ih-primary text-sm font-medium px-5 py-2.5 rounded-full hover:bg-ih-muted transition-colors">Outline gradient</button>
+        <button class="border border-slate-200 text-slate-600 text-sm px-5 py-2.5 rounded-full hover:border-ih-primary/30 transition-colors">Ghost</button>
+        <button disabled class="bg-ih-primary/40 text-white/70 text-sm px-5 py-2.5 rounded-full cursor-not-allowed">Disabled</button>
+        <button class="inline-flex items-center gap-2 bg-ih-orange text-white text-sm font-medium px-5 py-2.5 rounded-full hover:brightness-110 transition-all">
+          <iconify-icon icon="solar:phone-linear" width="16"></iconify-icon>
+          WhatsApp
+        </button>
+      </div>
+      <p class="spec-mono mt-4">Classes: border-gradient · btn-glow-wrap · rounded-full · hover:scale-[1.02]</p>
+    </div>
+
+    <!-- Inputs -->
+    <div class="mb-16 reveal">
+      <h3 class="font-display text-xl font-semibold mb-6 flex items-center gap-2">
+        <iconify-icon icon="solar:text-field-linear" class="text-ih-accent"></iconify-icon>
+        Inputs
+      </h3>
+      <div class="grid md:grid-cols-2 gap-6 max-w-2xl">
+        <div>
+          <label class="text-sm font-medium text-ih-primary block mb-1.5">Nome completo</label>
+          <input type="text" placeholder="Digite seu nome" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-ih-accent focus:ring-2 focus:ring-ih-accent/20 outline-none transition-all text-sm"/>
+          <p class="text-xs text-slate-400 mt-1 italic">Helper: como consta no documento</p>
+        </div>
+        <div>
+          <label class="text-sm font-medium text-ih-primary block mb-1.5">E-mail</label>
+          <input type="email" placeholder="seu@email.com" class="w-full px-4 py-3 rounded-xl border border-red-300 focus:ring-2 focus:ring-red-200 outline-none text-sm"/>
+          <p class="text-xs text-red-500 mt-1">E-mail inválido</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cards -->
+    <div class="mb-16 reveal">
+      <h3 class="font-display text-xl font-semibold mb-6 flex items-center gap-2">
+        <iconify-icon icon="solar:widget-4-linear" class="text-ih-accent"></iconify-icon>
+        Cards
+      </h3>
+      <div class="grid md:grid-cols-3 gap-6">
+        <article class="border-gradient rounded-2xl overflow-hidden bg-white group hover:shadow-xl transition-shadow duration-300">
+          <div class="h-36 bg-gradient-to-br from-ih-primary to-ih-secondary relative overflow-hidden">
+            <div class="absolute inset-0 ds-grid-bg opacity-30"></div>
+            <span class="absolute top-3 left-3 text-[0.6rem] font-bold uppercase tracking-widest bg-white/20 backdrop-blur text-white px-2 py-1 rounded-full">Curso</span>
+          </div>
+          <div class="p-5">
+            <h4 class="font-display font-semibold text-ih-primary group-hover:text-ih-accent transition-colors">Auditoria Hospitalar</h4>
+            <p class="text-sm text-slate-500 mt-2">40h · Online ao vivo</p>
+            <button class="mt-4 text-sm font-medium text-ih-accent hover:underline">Saiba mais →</button>
+          </div>
+        </article>
+        <article class="rounded-2xl border border-slate-200 p-6 bg-white hover:border-ih-accent/40 transition-colors animate-entry">
+          <iconify-icon icon="solar:calendar-linear" class="text-3xl text-ih-orange mb-3"></iconify-icon>
+          <h4 class="font-display font-semibold">Evento</h4>
+          <p class="text-sm text-slate-500 mt-2">Card neutro para eventos datados</p>
+        </article>
+        <article class="rounded-2xl bg-ih-primary text-white p-6 relative overflow-hidden">
+          <div class="orb w-32 h-32 bg-ih-accent/30 -right-10 -top-10"></div>
+          <h4 class="font-display font-semibold relative z-10">In Company</h4>
+          <p class="text-sm text-white/70 mt-2 relative z-10">Treinamento corporativo sob medida</p>
+        </article>
+      </div>
+    </div>
+
+    <!-- Navbar demo -->
+    <div class="mb-16 reveal">
+      <h3 class="font-display text-xl font-semibold mb-6">Navbar</h3>
+      <div class="border-gradient rounded-2xl overflow-hidden">
+        <div class="flex items-center justify-between px-6 py-3 bg-white/95 backdrop-blur">
+          <span class="font-display font-bold text-ih-primary">Inforhealth</span>
+          <div class="hidden sm:flex gap-5 text-sm text-slate-600">
+            <a href="#" class="hover:text-ih-primary transition-colors">Cursos</a>
+            <a href="#" class="hover:text-ih-primary transition-colors">Eventos</a>
+            <a href="#" class="hover:text-ih-primary transition-colors">Blog</a>
+          </div>
+          <button class="bg-ih-accent text-white text-xs font-medium px-4 py-2 rounded-full">Contato</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Badges & Tooltips -->
+    <div class="mb-16 reveal flex flex-wrap gap-8 items-start">
+      <div>
+        <h3 class="font-display text-xl font-semibold mb-4">Badges</h3>
+        <div class="flex flex-wrap gap-2">
+          <span class="text-[0.65rem] font-bold uppercase tracking-widest bg-ih-primary text-white px-3 py-1 rounded-full">Novo</span>
+          <span class="text-[0.65rem] font-bold uppercase tracking-widest bg-ih-accent/15 text-ih-accent px-3 py-1 rounded-full">Online</span>
+          <span class="text-[0.65rem] font-bold uppercase tracking-widest border border-ih-orange/40 text-ih-orange px-3 py-1 rounded-full">Destaque</span>
+        </div>
+      </div>
+      <div>
+        <h3 class="font-display text-xl font-semibold mb-4">Tooltips</h3>
+        <div class="tooltip-wrap">
+          <button class="border-gradient bg-white px-4 py-2 rounded-lg text-sm text-ih-primary">Hover me</button>
+          <span class="tooltip">Informação contextual</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal trigger -->
+    <div class="reveal">
+      <h3 class="font-display text-xl font-semibold mb-4">Modal</h3>
+      <button id="open-modal" class="bg-ih-primary text-white px-5 py-2.5 rounded-full text-sm font-medium hover:bg-ih-secondary transition-colors">Abrir modal demo</button>
+    </div>
+  </section>
+
+  <!-- ═══ 5. ÍCONES ═══ -->
+  <section id="icons" class="ds-section px-8 lg:px-16 xl:px-24 py-20 border-b border-ih-primary/10 bg-white relative">
+    <div class="reveal mb-12">
+      <span class="text-[0.65rem] font-semibold uppercase tracking-[0.25em] text-slate-400">05 · Ícones</span>
+      <h2 class="font-display text-3xl font-semibold text-ih-primary mt-2">Solar Icon Set (Iconify)</h2>
+      <p class="text-slate-500 mt-2">Mesmo padrão dos templates Aura: <code class="font-mono text-xs bg-slate-100 px-1 rounded">&lt;iconify-icon icon="solar:..."&gt;</code></p>
+    </div>
+    <div class="grid grid-cols-4 sm:grid-cols-6 md:grid-cols-8 gap-6 reveal">
+      <div class="flex flex-col items-center gap-2 p-4 rounded-xl hover:bg-ih-muted transition-colors group">
+        <iconify-icon icon="solar:heart-pulse-linear" width="28" class="text-ih-primary group-hover:text-ih-accent transition-colors"></iconify-icon>
+        <span class="text-[0.6rem] spec-mono text-center">heart-pulse</span>
+      </div>
+      <div class="flex flex-col items-center gap-2 p-4 rounded-xl hover:bg-ih-muted transition-colors group">
+        <iconify-icon icon="solar:stethoscope-linear" width="28" class="text-ih-primary group-hover:text-ih-accent transition-colors"></iconify-icon>
+        <span class="text-[0.6rem] spec-mono">stethoscope</span>
+      </div>
+      <div class="flex flex-col items-center gap-2 p-4 rounded-xl hover:bg-ih-muted transition-colors group">
+        <iconify-icon icon="solar:book-bookmark-linear" width="28" class="text-ih-primary group-hover:text-ih-accent transition-colors"></iconify-icon>
+        <span class="text-[0.6rem] spec-mono">book</span>
+      </div>
+      <div class="flex flex-col items-center gap-2 p-4 rounded-xl hover:bg-ih-muted transition-colors group">
+        <iconify-icon icon="solar:calendar-linear" width="28" class="text-ih-primary group-hover:text-ih-accent transition-colors"></iconify-icon>
+        <span class="text-[0.6rem] spec-mono">calendar</span>
+      </div>
+      <div class="flex flex-col items-center gap-2 p-4 rounded-xl hover:bg-ih-muted transition-colors group">
+        <iconify-icon icon="solar:users-group-rounded-linear" width="28" class="text-ih-primary group-hover:text-ih-accent transition-colors"></iconify-icon>
+        <span class="text-[0.6rem] spec-mono">users</span>
+      </div>
+      <div class="flex flex-col items-center gap-2 p-4 rounded-xl hover:bg-ih-muted transition-colors group">
+        <iconify-icon icon="solar:diploma-linear" width="28" class="text-ih-primary group-hover:text-ih-accent transition-colors"></iconify-icon>
+        <span class="text-[0.6rem] spec-mono">diploma</span>
+      </div>
+      <div class="flex flex-col items-center gap-2 p-4 rounded-xl hover:bg-ih-muted transition-colors group">
+        <iconify-icon icon="solar:phone-linear" width="28" class="text-ih-accent group-hover:scale-110 transition-transform"></iconify-icon>
+        <span class="text-[0.6rem] spec-mono">phone</span>
+      </div>
+      <div class="flex flex-col items-center gap-2 p-4 rounded-xl hover:bg-ih-muted transition-colors group">
+        <iconify-icon icon="solar:play-circle-linear" width="28" class="text-ih-orange group-hover:scale-110 transition-transform"></iconify-icon>
+        <span class="text-[0.6rem] spec-mono">play</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ 6. ANIMAÇÕES ═══ -->
+  <section id="motion" class="ds-section px-8 lg:px-16 xl:px-24 py-20 relative overflow-hidden bg-gradient-to-b from-white to-ih-muted/50">
+    <div class="beam-h top-1/2 w-full" style="animation-delay: 3s;"></div>
+    <div class="reveal mb-12">
+      <span class="text-[0.65rem] font-semibold uppercase tracking-[0.25em] text-slate-400">06 · Animações</span>
+      <h2 class="font-display text-3xl font-semibold text-ih-primary mt-2">Motion &amp; transições</h2>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 reveal">
+      <div class="border-gradient rounded-2xl p-6 bg-white">
+        <h4 class="font-display font-semibold mb-2">fadeSlideIn</h4>
+        <p class="text-sm text-slate-500 mb-4">Fluxora — entrada com blur</p>
+        <div class="h-12 bg-ih-primary/10 rounded-lg [animation:fadeSlideIn_1.5s_ease-out_infinite_alternate]"></div>
+        <code class="spec-mono block mt-3">[animation:fadeSlideIn_1s_ease-out_both] animate-on-scroll</code>
+      </div>
+      <div class="border-gradient rounded-2xl p-6 bg-white">
+        <h4 class="font-display font-semibold mb-2">fadeInUpBlur</h4>
+        <p class="text-sm text-slate-500 mb-4">AI Social — cards</p>
+        <div class="h-12 bg-ih-accent/20 rounded-lg animate-entry"></div>
+        <code class="spec-mono block mt-3">.animate-entry</code>
+      </div>
+      <div class="border-gradient rounded-2xl p-6 bg-white">
+        <h4 class="font-display font-semibold mb-2">reveal (scroll)</h4>
+        <p class="text-sm text-slate-500 mb-4">Digital Architect</p>
+        <code class="spec-mono block">.reveal → .reveal.active</code>
+      </div>
+      <div class="border-gradient rounded-2xl p-6 bg-white">
+        <h4 class="font-display font-semibold mb-2">border-gradient</h4>
+        <p class="text-sm text-slate-500 mb-4">Fluxora / Flux Motion</p>
+        <div class="h-12 rounded-xl border-gradient bg-ih-muted"></div>
+      </div>
+      <div class="border-gradient rounded-2xl p-6 bg-white">
+        <h4 class="font-display font-semibold mb-2">text-glow</h4>
+        <p class="text-sm text-slate-500 mb-4">Flux Motion — lettering</p>
+        <span class="font-display text-2xl font-bold text-transparent-gradient text-glow">Glow</span>
+      </div>
+      <div class="border-gradient rounded-2xl p-6 bg-white relative overflow-hidden">
+        <h4 class="font-display font-semibold mb-2">beams + orbs</h4>
+        <p class="text-sm text-slate-500 mb-4">White Medical — fundo</p>
+        <div class="h-12 rounded-lg ds-grid-bg relative">
+          <div class="beam-h top-1/2"></div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="mt-20 pt-10 border-t border-slate-200 text-center reveal">
+      <p class="font-display text-transparent-gradient text-2xl font-bold text-glow">Inforhealth Design System</p>
+      <p class="text-sm text-slate-400 mt-2">Baseado em Fluxora · AI Automation · Flux Motion · Digital Architect · White Medical</p>
+      <a href="index.html" class="inline-block mt-6 text-sm text-ih-accent hover:underline">← Voltar ao esqueleto do portal</a>
+    </footer>
+  </section>
+
+</main>
+
+<!-- Modal -->
+<div id="modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+  <div class="border-gradient bg-white rounded-2xl p-8 max-w-md mx-4 shadow-2xl [animation:fadeSlideIn_0.4s_ease-out_both]">
+    <h3 id="modal-title" class="font-display text-xl font-semibold text-ih-primary">Modal de exemplo</h3>
+    <p class="text-sm text-slate-600 mt-3">Componente modal com backdrop blur e animação fadeSlideIn.</p>
+    <div class="flex gap-3 mt-6">
+      <button id="close-modal" class="flex-1 bg-ih-muted text-slate-700 py-2.5 rounded-full text-sm font-medium hover:bg-slate-200 transition-colors">Fechar</button>
+      <button class="flex-1 bg-ih-accent text-white py-2.5 rounded-full text-sm font-medium">Confirmar</button>
+    </div>
+  </div>
+</div>
+
+<script>
+/* animate-on-scroll — Fluxora / AI Social pattern */
+(function () {
+  const style = document.createElement('style');
+  style.textContent = `
+    .animate-on-scroll { animation-play-state: paused !important; }
+    .animate-on-scroll.animate { animation-play-state: running !important; }
+  `;
+  document.head.appendChild(style);
+
+  const once = true;
+  if (!window.__inViewIO) {
+    window.__inViewIO = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate');
+          if (once) window.__inViewIO.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -5% 0px' });
+  }
+  document.querySelectorAll('.animate-on-scroll').forEach((el) => window.__inViewIO.observe(el));
+  document.querySelectorAll('.animate-on-scroll').forEach((el) => {
+    const rect = el.getBoundingClientRect();
+    if (rect.top < window.innerHeight && rect.bottom > 0) el.classList.add('animate');
+  });
+})();
+
+/* reveal — Digital Architect */
+(function () {
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((e) => { if (e.isIntersecting) e.target.classList.add('active'); });
+  }, { threshold: 0.08 });
+  reveals.forEach((el) => observer.observe(el));
+})();
+
+/* Modal */
+const modal = document.getElementById('modal');
+document.getElementById('open-modal').addEventListener('click', () => modal.classList.add('open'));
+document.getElementById('close-modal').addEventListener('click', () => modal.classList.remove('open'));
+modal.addEventListener('click', (e) => { if (e.target === modal) modal.classList.remove('open'); });
+</script>
+
+
+<script src="js/mobile-nav.js"></script>
+</body>
+</html>

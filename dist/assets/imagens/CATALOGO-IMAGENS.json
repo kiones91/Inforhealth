@@ -1,0 +1,77 @@
+{
+  "equipe": [
+    {
+      "arquivo": "luis-angelo-ozan-maligieri.jpg",
+      "origem": "equipe\\assets\\prof_luis_2a7000c2cb81.jpg"
+    },
+    {
+      "arquivo": "eliane-santana.png",
+      "origem": "equipe\\assets\\PROFA_971706f17c56.png"
+    },
+    {
+      "arquivo": "ana-cristina-dos-santos.png",
+      "origem": "equipe\\assets\\PROFA_9f7a9eeb41c8.png"
+    },
+    {
+      "arquivo": "patricia-shimabukuro.png",
+      "origem": "equipe\\assets\\PROFA_3aeb8bae087b.png"
+    },
+    {
+      "arquivo": "kehone-miranda.png",
+      "origem": "equipe\\assets\\equipe-inforhealth-Kehone_2f7ac266d43e.png"
+    },
+    {
+      "arquivo": "sheila-canos.png",
+      "origem": "equipe\\assets\\PROFA_4ef93d95a20b.png"
+    },
+    {
+      "arquivo": "marcio-mielo.png",
+      "origem": "equipe\\assets\\PROF_0a24eb6e4631.png"
+    },
+    {
+      "arquivo": "maria-luiza-monteiro-costa.png",
+      "origem": "equipe\\assets\\PROFA_e596a6f537e0.png"
+    },
+    {
+      "arquivo": "marcelo-gorri-mazzali.png",
+      "origem": "equipe\\assets\\PROF_a9a6f62bfd2b.png"
+    },
+    {
+      "arquivo": "paula-nahas.png",
+      "origem": "equipe\\assets\\PROFA_514c1240fd81.png"
+    },
+    {
+      "arquivo": "ailton-pedro-batista.png",
+      "origem": "equipe\\assets\\PROF_32041a1b410b.png"
+    },
+    {
+      "arquivo": "hellen-graf-fernandes.png",
+      "origem": "equipe\\assets\\PROFA_f3eb2a3181f8.png"
+    },
+    {
+      "arquivo": "jose-antonio-lopes-macedo.png",
+      "origem": "equipe\\assets\\equipe-inforhealth-Jose-Antoni_c2bbb729a4e5.png"
+    }
+  ],
+  "institucional": [
+    {
+      "arquivo": "logo-inforhealth-cursos.png",
+      "tipo": "logo",
+      "origem": "equipe\\assets\\logo_inforhealth_cursos_e151dc0f2f12.png"
+    },
+    {
+      "arquivo": "logo-inforhealth-cursos.webp",
+      "tipo": "logo",
+      "origem": "equipe\\assets\\logo_inforhealth_cursos-233x72_183116861173.webp"
+    },
+    {
+      "arquivo": "logo-inforhealth-2020.png",
+      "tipo": "logo",
+      "origem": "equipe\\assets\\cropped-logo_inforhealth_2020__4609a2e287ee.png"
+    },
+    {
+      "arquivo": "favicon.png",
+      "tipo": "favicon"
+    }
+  ]
+}

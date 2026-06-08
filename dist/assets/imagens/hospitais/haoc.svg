@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 36" fill="none">
+  <rect x="2" y="8" width="22" height="20" rx="3" fill="#16a89a"/>
+  <text x="13" y="22" font-family="Arial,sans-serif" font-size="7" font-weight="700" fill="#fff" text-anchor="middle">HAOC</text>
+  <text x="30" y="16" font-family="Arial,sans-serif" font-size="7.5" font-weight="600" fill="#09314d">Hospital Alemão</text>
+  <text x="30" y="26" font-family="Arial,sans-serif" font-size="7.5" font-weight="600" fill="#09314d">Oswaldo Cruz</text>
+</svg>
