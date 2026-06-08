@@ -4,6 +4,12 @@ set -euo pipefail
 ROOT="$(cd "$(dirname "$0")" && pwd)"
 DIST="$ROOT/dist"
 
+if [ -f "$DIST/index.html" ] && [ "${FORCE_BUILD:-0}" != "1" ]; then
+  COUNT="$(find "$DIST" -type f | wc -l | tr -d ' ')"
+  echo "dist/ ja existe ($COUNT arquivos) — pulando rebuild"
+  exit 0
+fi
+
 rm -rf "$DIST"
 mkdir -p "$DIST"
 

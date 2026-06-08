@@ -1,5 +1,5 @@
 {
-  "build_command": "npm install && npm run build:ci",
-  "deploy_command": "npx wrangler deploy",
-  "comment": "dist/ versionado no Git. build:ci preserva dist/ se ja existir. Ajuste estes valores em Workers > inforhealth > Settings > Build."
+  "build_command": "",
+  "deploy_command": "npm ci && npx wrangler deploy",
+  "comment": "Painel: Workers > inforhealth > Settings > Build. Deixe Build vazio; dist/ ja esta no Git (317 arquivos). O token do Git da Cloudflare faz o deploy — nao precisa de API token manual."
 }

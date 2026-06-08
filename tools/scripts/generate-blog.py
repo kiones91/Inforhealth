@@ -306,32 +306,15 @@ def ds_head(title, description, asset_prefix=""):
 
 
 def ds_nav(asset_prefix="", active="blog"):
-    links = [
-        ("cursos.html", "Cursos", "cursos"),
-        ("eventos.html", "Eventos", "eventos"),
-        ("in-company.html", "In Company", "in-company"),
-        ("blog.html", "Blog", "blog"),
-        ("equipe.html", "Equipe", "equipe"),
-        ("sobre.html", "Sobre", "sobre"),
-        ("contato.html", "Contato", "contato"),
-    ]
-    nav_items = ""
-    for href, label, key in links:
-        cls = "text-ih-primary" if key == active else "text-slate-400 hover:text-ih-primary transition-colors"
-        current = ' aria-current="page"' if key == active else ""
-        nav_items += f'\n        <a class="text-[0.7rem] font-semibold uppercase tracking-[0.15em] {cls}" href="{asset_prefix}{href}"{current}>{label}</a>'
-    return f"""  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-ih-primary/10">
-    <nav class="flex items-center justify-between px-6 lg:px-12 py-4">
-      <a href="{asset_prefix}index.html" class="flex items-center group">
-        <img src="{asset_prefix}../assets/imagens/institucional/logo-inforhealth-2020.png" alt="Inforhealth — Educação e Excelência em Saúde" class="h-9 w-auto transition-transform group-hover:scale-105"/>
-      </a>
-      <div class="hidden lg:flex items-center gap-5">{nav_items}
-      </div>
-      <a class="btn-glass btn-glass-accent btn-glass-sm" href="https://wa.me/5519997773084">
-        <iconify-icon icon="solar:phone-linear" width="14"></iconify-icon> WhatsApp
-      </a>
-    </nav>
-  </header>"""
+    import importlib.util
+    from pathlib import Path as _Path
+    _spec = importlib.util.spec_from_file_location(
+        "nav_snippet",
+        _Path(__file__).resolve().parent / "nav-snippet.py",
+    )
+    _mod = importlib.util.module_from_spec(_spec)
+    _spec.loader.exec_module(_mod)
+    return _mod.site_header_nav(asset_prefix=asset_prefix, active=active)
 
 
 def ds_closing_footer(asset_prefix=""):
@@ -350,6 +333,18 @@ def ds_whatsapp():
     return """<a href="https://wa.me/5519997773084" class="btn-glass btn-glass-accent btn-glass-fab fixed bottom-6 right-6 z-50 shadow-xl" aria-label="WhatsApp">
   <iconify-icon icon="solar:chat-round-dots-bold" width="26"></iconify-icon>
 </a>"""
+
+
+def ds_mobile_nav(asset_prefix=""):
+    import importlib.util
+    from pathlib import Path as _Path
+    _spec = importlib.util.spec_from_file_location(
+        "nav_snippet",
+        _Path(__file__).resolve().parent / "nav-snippet.py",
+    )
+    _mod = importlib.util.module_from_spec(_spec)
+    _spec.loader.exec_module(_mod)
+    return _mod.mobile_nav_script_tag(asset_prefix)
 
 
 def ds_scripts(extra=""):
@@ -500,6 +495,7 @@ def render_article(a, articles=None):
 </main>
 
 {ds_whatsapp()}
+{ds_mobile_nav("../../")}
 {ds_scripts()}
 </body>
 </html>"""
@@ -618,6 +614,7 @@ def render_blog_listing(articles, page=1, per_page=12):
 </main>
 
 {ds_whatsapp()}
+{ds_mobile_nav("")}
 {ds_scripts()}
 </body>
 </html>"""

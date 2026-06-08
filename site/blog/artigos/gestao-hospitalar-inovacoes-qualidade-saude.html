@@ -47,7 +47,7 @@
       <a href="../../index.html" class="flex items-center group">
         <img src="../../../assets/imagens/institucional/logo-inforhealth-2020.png" alt="Inforhealth — Educação e Excelência em Saúde" class="h-9 w-auto transition-transform group-hover:scale-105"/>
       </a>
-      <div class="hidden lg:flex items-center gap-5">
+      <div class="site-nav-desktop hidden lg:flex items-center gap-5">
         <a class="text-[0.7rem] font-semibold uppercase tracking-[0.15em] text-slate-400 hover:text-ih-primary transition-colors" href="../../cursos.html">Cursos</a>
         <a class="text-[0.7rem] font-semibold uppercase tracking-[0.15em] text-slate-400 hover:text-ih-primary transition-colors" href="../../eventos.html">Eventos</a>
         <a class="text-[0.7rem] font-semibold uppercase tracking-[0.15em] text-slate-400 hover:text-ih-primary transition-colors" href="../../in-company.html">In Company</a>
@@ -56,11 +56,31 @@
         <a class="text-[0.7rem] font-semibold uppercase tracking-[0.15em] text-slate-400 hover:text-ih-primary transition-colors" href="../../sobre.html">Sobre</a>
         <a class="text-[0.7rem] font-semibold uppercase tracking-[0.15em] text-slate-400 hover:text-ih-primary transition-colors" href="../../contato.html">Contato</a>
       </div>
-      <a class="btn-glass btn-glass-accent btn-glass-sm" href="https://wa.me/5519997773084">
-        <iconify-icon icon="solar:phone-linear" width="14"></iconify-icon> WhatsApp
-      </a>
+      <div class="flex items-center gap-2 shrink-0">
+        <button type="button" class="site-nav-toggle lg:hidden" aria-expanded="false" aria-controls="site-mobile-nav" aria-label="Abrir menu">
+          <iconify-icon icon="solar:hamburger-menu-linear" width="24"></iconify-icon>
+        </button>
+        <a class="btn-glass btn-glass-accent btn-glass-sm" href="https://wa.me/5519997773084">
+          <iconify-icon icon="solar:phone-linear" width="14"></iconify-icon> WhatsApp
+        </a>
+      </div>
     </nav>
   </header>
+  <div id="site-mobile-nav" class="site-mobile-nav" aria-hidden="true">
+    <div class="site-mobile-nav-backdrop" data-mobile-nav-close tabindex="-1" aria-hidden="true"></div>
+    <aside class="site-mobile-nav-panel" role="dialog" aria-modal="true" aria-label="Menu de navegação">
+      <div class="site-mobile-nav-head">
+        <span class="site-mobile-nav-label">Navegação</span>
+        <button type="button" class="site-mobile-nav-close" aria-label="Fechar menu" data-mobile-nav-close>
+          <iconify-icon icon="solar:close-circle-linear" width="26"></iconify-icon>
+        </button>
+      </div>
+      <nav class="site-mobile-nav-links" aria-label="Menu principal"></nav>
+      <a href="https://wa.me/5519997773084" class="btn-glass btn-glass-accent btn-glass-md site-mobile-nav-whatsapp">
+        <iconify-icon icon="solar:chat-round-dots-linear" width="18"></iconify-icon> Falar no WhatsApp
+      </a>
+    </aside>
+  </div>
 
   <!-- Hero artigo -->
   <section class="blog-article-hero relative px-8 lg:px-16 xl:px-24 pt-12 pb-8 overflow-hidden ds-grid-bg">
@@ -295,5 +315,8 @@ document.addEventListener('DOMContentLoaded', () => {
   
 });
 </script>
+
+
+<script src="../../js/mobile-nav.js"></script>
 </body>
 </html>

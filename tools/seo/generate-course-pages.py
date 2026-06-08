@@ -10,6 +10,18 @@ REPO = Path(__file__).resolve().parent.parent.parent
 SITE = REPO / "site"
 CONTENT = REPO / "content"
 OUT_DIR = SITE / "cursos"
+SCRIPTS = REPO / "tools" / "scripts"
+
+
+def _load_nav_snippet():
+    import importlib.util
+    spec = importlib.util.spec_from_file_location("nav_snippet", SCRIPTS / "nav-snippet.py")
+    mod = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(mod)
+    return mod
+
+
+_NAV = _load_nav_snippet()
 
 BADGE = {
     "ao-vivo": ("solar:videocamera-record-linear", "Online Ao Vivo"),
@@ -102,25 +114,7 @@ def render_page(slug: str, short_title: str, meta: dict, modality_key: str) -> s
 
 <main class="w-full max-w-[1400px] mx-auto bg-white rounded-[2.5rem] shadow-2xl overflow-hidden relative">
 
-  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-ih-primary/10">
-    <nav class="flex items-center justify-between px-6 lg:px-12 py-4">
-      <a href="../index.html" class="flex items-center group">
-        <img src="../../assets/imagens/institucional/logo-inforhealth-2020.png" alt="Inforhealth — Educação e Excelência em Saúde" class="h-9 w-auto"/>
-      </a>
-      <div class="hidden lg:flex items-center gap-5">
-        <a class="text-[0.7rem] font-semibold uppercase tracking-[0.15em] text-ih-primary" href="../cursos.html" aria-current="page">Cursos</a>
-        <a class="text-[0.7rem] font-semibold uppercase tracking-[0.15em] text-slate-400 hover:text-ih-primary transition-colors" href="../eventos.html">Eventos</a>
-        <a class="text-[0.7rem] font-semibold uppercase tracking-[0.15em] text-slate-400 hover:text-ih-primary transition-colors" href="../in-company.html">In Company</a>
-        <a class="text-[0.7rem] font-semibold uppercase tracking-[0.15em] text-slate-400 hover:text-ih-primary transition-colors" href="../blog.html">Blog</a>
-        <a class="text-[0.7rem] font-semibold uppercase tracking-[0.15em] text-slate-400 hover:text-ih-primary transition-colors" href="../equipe.html">Equipe</a>
-        <a class="text-[0.7rem] font-semibold uppercase tracking-[0.15em] text-slate-400 hover:text-ih-primary transition-colors" href="../sobre.html">Sobre</a>
-        <a class="text-[0.7rem] font-semibold uppercase tracking-[0.15em] text-slate-400 hover:text-ih-primary transition-colors" href="../contato.html">Contato</a>
-      </div>
-      <a class="btn-glass btn-glass-accent btn-glass-sm" href="https://wa.me/5519997773084">
-        <iconify-icon icon="solar:phone-linear" width="14"></iconify-icon> WhatsApp
-      </a>
-    </nav>
-  </header>
+{_NAV.site_header_nav(asset_prefix="../", active="cursos", logo_aria_current=False)}
 
   <section class="relative px-8 lg:px-16 xl:px-24 pt-12 pb-8 overflow-hidden ds-grid-bg">
     <div class="max-w-4xl relative z-10 reveal">
@@ -183,6 +177,7 @@ def render_page(slug: str, short_title: str, meta: dict, modality_key: str) -> s
 <a href="https://wa.me/5519997773084" class="btn-glass btn-glass-accent btn-glass-fab fixed bottom-6 right-6 z-50 shadow-xl" aria-label="WhatsApp">
   <iconify-icon icon="solar:chat-round-dots-bold" width="26"></iconify-icon>
 </a>
+{_NAV.mobile_nav_script_tag("../")}
 </body>
 </html>
 """

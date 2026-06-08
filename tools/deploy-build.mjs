@@ -37,9 +37,8 @@ async function main() {
   await cp(SITE, DIST, { recursive: true });
   await cp(ASSETS, join(DIST, "assets"), { recursive: true });
 
-  const index = join(DIST, "index.html");
   try {
-    await stat(index);
+    await stat(join(DIST, "index.html"));
   } catch {
     console.error("ERRO: dist/index.html ausente");
     process.exit(1);

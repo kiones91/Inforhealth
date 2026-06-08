@@ -1,7 +1,15 @@
 from pathlib import Path
+import importlib.util
 import subprocess
 
 SITE = Path(__file__).resolve().parent.parent / "site"
+SCRIPTS = Path(__file__).resolve().parent / "scripts"
+
+_spec = importlib.util.spec_from_file_location("nav_snippet", SCRIPTS / "nav-snippet.py")
+_nav = importlib.util.module_from_spec(_spec)
+_spec.loader.exec_module(_nav)
+nav_header = _nav.site_header_nav(active="cursos")
+mobile_nav_script = _nav.mobile_nav_script_tag()
 
 subprocess.run(['python3', 'gen-cards.py'], check=True, cwd=Path(__file__).resolve().parent)
 cards = Path('_course-cards-v2.html').read_text(encoding='utf-8').rstrip()
@@ -51,25 +59,7 @@ html = f'''<!DOCTYPE html>
 
 <main class="w-full max-w-[1400px] mx-auto bg-white rounded-[2.5rem] shadow-2xl overflow-hidden relative">
 
-  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-ih-primary/10">
-    <nav class="flex items-center justify-between px-6 lg:px-12 py-4">
-      <a href="index.html" class="flex items-center group">
-        <img src="../assets/imagens/institucional/logo-inforhealth-2020.png" alt="Inforhealth — Educação e Excelência em Saúde" class="h-9 w-auto transition-transform group-hover:scale-105"/>
-      </a>
-      <div class="hidden lg:flex items-center gap-5">
-        <a class="text-[0.7rem] font-semibold uppercase tracking-[0.15em] text-ih-primary" href="cursos.html" aria-current="page">Cursos</a>
-        <a class="text-[0.7rem] font-semibold uppercase tracking-[0.15em] text-slate-400 hover:text-ih-primary transition-colors" href="eventos.html">Eventos</a>
-        <a class="text-[0.7rem] font-semibold uppercase tracking-[0.15em] text-slate-400 hover:text-ih-primary transition-colors" href="in-company.html">In Company</a>
-        <a class="text-[0.7rem] font-semibold uppercase tracking-[0.15em] text-slate-400 hover:text-ih-primary transition-colors" href="blog.html">Blog</a>
-        <a class="text-[0.7rem] font-semibold uppercase tracking-[0.15em] text-slate-400 hover:text-ih-primary transition-colors" href="equipe.html">Equipe</a>
-        <a class="text-[0.7rem] font-semibold uppercase tracking-[0.15em] text-slate-400 hover:text-ih-primary transition-colors" href="sobre.html">Sobre</a>
-        <a class="text-[0.7rem] font-semibold uppercase tracking-[0.15em] text-slate-400 hover:text-ih-primary transition-colors" href="contato.html">Contato</a>
-      </div>
-      <a class="btn-glass btn-glass-accent btn-glass-sm" href="https://wa.me/5519997773084">
-        <iconify-icon icon="solar:phone-linear" width="14"></iconify-icon> WhatsApp
-      </a>
-    </nav>
-  </header>
+{nav_header}
 
   <!-- Hero -->
   <section class="relative px-8 lg:px-16 xl:px-24 pt-16 pb-12 overflow-hidden ds-grid-bg">
@@ -201,6 +191,7 @@ html = f'''<!DOCTYPE html>
 </a>
 
 <script src="js/catalog.js"></script>
+{mobile_nav_script}
 </body>
 </html>
 '''

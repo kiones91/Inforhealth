@@ -46,7 +46,7 @@
         <img src="../assets/imagens/institucional/logo-inforhealth-2020.png" alt="Inforhealth — Educação e Excelência em Saúde" class="h-8 w-auto transition-transform group-hover:scale-105"/>
         <span class="text-[0.6rem] font-mono uppercase tracking-[0.2em] text-slate-300 border-l border-slate-200 pl-2 hidden sm:block">Design System</span>
       </a>
-      <div class="hidden lg:flex items-center gap-5">
+      <div class="site-nav-desktop hidden lg:flex items-center gap-5">
         <a class="text-[0.65rem] font-semibold uppercase tracking-[0.2em] text-slate-400 hover:text-ih-primary transition-colors" href="#hero">Hero</a>
         <a class="text-[0.65rem] font-semibold uppercase tracking-[0.2em] text-slate-400 hover:text-ih-primary transition-colors" href="#typography">Tipografia</a>
         <a class="text-[0.65rem] font-semibold uppercase tracking-[0.2em] text-slate-400 hover:text-ih-primary transition-colors" href="#colors">Cores</a>
@@ -638,5 +638,8 @@ document.getElementById('open-modal').addEventListener('click', () => modal.clas
 document.getElementById('close-modal').addEventListener('click', () => modal.classList.remove('open'));
 modal.addEventListener('click', (e) => { if (e.target === modal) modal.classList.remove('open'); });
 </script>
+
+
+<script src="js/mobile-nav.js"></script>
 </body>
 </html>
