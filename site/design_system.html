@@ -484,6 +484,124 @@
       <h3 class="font-display text-xl font-semibold mb-4">Modal</h3>
       <button id="open-modal" class="bg-ih-primary text-white px-5 py-2.5 rounded-full text-sm font-medium hover:bg-ih-secondary transition-colors">Abrir modal demo</button>
     </div>
+
+    <!-- Marquee/Carrossel Interativo Infinito -->
+    <div class="mt-16 reveal border-t border-slate-200 pt-16">
+      <h3 class="font-display text-xl font-semibold mb-4 flex items-center gap-2">
+        <iconify-icon icon="solar:round-transfer-horizontal-linear" class="text-ih-accent" width="22"></iconify-icon>
+        Carrossel Marquee Interativo Infinito
+      </h3>
+      <p class="text-sm text-slate-500 mb-6">
+        Slide horizontal com loop contínuo e aceleração por hardware 3D (`translate3d`). 
+        O autoplay é pausado ao passar o mouse ou ao colocar o dedo sobre o container. O arraste (drag) manual é ativado **apenas ao segurar o botão esquerdo do mouse** (desktop) ou **ao manter o dedo pressionado sobre um card por 250ms** (mobile), prevenindo conflitos com o scroll vertical nativo da página.
+      </p>
+
+      <!-- Demonstração Ao Vivo no DS -->
+      <div class="courses-marquee overflow-hidden mb-8 border-gradient rounded-2xl bg-ih-muted/20 py-6 select-none">
+        <div class="courses-marquee-track flex gap-6 w-max">
+          <!-- Card 1 -->
+          <article class="course-card-slide border-gradient shrink-0 w-[280px] bg-white rounded-2xl overflow-hidden p-4 shadow-sm select-none">
+            <span class="text-[0.6rem] font-bold uppercase tracking-widest bg-ih-accent/15 text-ih-accent px-2.5 py-1 rounded-full">Exemplo 1</span>
+            <h4 class="font-display font-semibold text-ih-primary mt-3">Card Demonstrativo A</h4>
+            <p class="text-xs text-slate-500 mt-2">Segure para arrastar no mobile</p>
+          </article>
+          <!-- Card 2 -->
+          <article class="course-card-slide border-gradient shrink-0 w-[280px] bg-white rounded-2xl overflow-hidden p-4 shadow-sm select-none">
+            <span class="text-[0.6rem] font-bold uppercase tracking-widest bg-ih-primary/10 text-ih-primary px-2.5 py-1 rounded-full">Exemplo 2</span>
+            <h4 class="font-display font-semibold text-ih-primary mt-3">Card Demonstrativo B</h4>
+            <p class="text-xs text-slate-500 mt-2">Pause com mouse hover / touch</p>
+          </article>
+          <!-- Card 3 -->
+          <article class="course-card-slide border-gradient shrink-0 w-[280px] bg-white rounded-2xl overflow-hidden p-4 shadow-sm select-none">
+            <span class="text-[0.6rem] font-bold uppercase tracking-widest bg-ih-orange/10 text-ih-orange px-2.5 py-1 rounded-full">Exemplo 3</span>
+            <h4 class="font-display font-semibold text-ih-primary mt-3">Card Demonstrativo C</h4>
+            <p class="text-xs text-slate-500 mt-2">Passa livremente no autoplay</p>
+          </article>
+          <!-- Duplicados para loop infinito -->
+          <article class="course-card-slide border-gradient shrink-0 w-[280px] bg-white rounded-2xl overflow-hidden p-4 shadow-sm select-none">
+            <span class="text-[0.6rem] font-bold uppercase tracking-widest bg-ih-accent/15 text-ih-accent px-2.5 py-1 rounded-full">Exemplo 1</span>
+            <h4 class="font-display font-semibold text-ih-primary mt-3">Card Demonstrativo A</h4>
+            <p class="text-xs text-slate-500 mt-2">Segure para arrastar no mobile</p>
+          </article>
+          <article class="course-card-slide border-gradient shrink-0 w-[280px] bg-white rounded-2xl overflow-hidden p-4 shadow-sm select-none">
+            <span class="text-[0.6rem] font-bold uppercase tracking-widest bg-ih-primary/10 text-ih-primary px-2.5 py-1 rounded-full">Exemplo 2</span>
+            <h4 class="font-display font-semibold text-ih-primary mt-3">Card Demonstrativo B</h4>
+            <p class="text-xs text-slate-500 mt-2">Pause com mouse hover / touch</p>
+          </article>
+          <article class="course-card-slide border-gradient shrink-0 w-[280px] bg-white rounded-2xl overflow-hidden p-4 shadow-sm select-none">
+            <span class="text-[0.6rem] font-bold uppercase tracking-widest bg-ih-orange/10 text-ih-orange px-2.5 py-1 rounded-full">Exemplo 3</span>
+            <h4 class="font-display font-semibold text-ih-primary mt-3">Card Demonstrativo C</h4>
+            <p class="text-xs text-slate-500 mt-2">Passa livremente no autoplay</p>
+          </article>
+        </div>
+      </div>
+
+      <!-- Estrutura / Code Reference -->
+      <div class="grid lg:grid-cols-2 gap-6 mt-6">
+        <div>
+          <h4 class="text-sm font-semibold text-slate-700 mb-2">CSS Estrutural (design-system.css)</h4>
+          <pre class="bg-slate-900 text-slate-300 p-4 rounded-xl text-[11px] font-mono overflow-x-auto max-h-[300px]"><code>.courses-marquee,
+.events-marquee,
+.blog-marquee {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  cursor: grab;
+}
+
+.courses-marquee:active,
+.events-marquee:active,
+.blog-marquee:active {
+  cursor: grabbing;
+}
+
+.courses-marquee-track,
+.events-marquee-track,
+.blog-marquee-track {
+  display: flex;
+  will-change: transform;
+}</code></pre>
+        </div>
+        <div>
+          <h4 class="text-sm font-semibold text-slate-700 mb-2">JavaScript de Controle (Hold &amp; Drag)</h4>
+          <pre class="bg-slate-900 text-slate-300 p-4 rounded-xl text-[11px] font-mono overflow-x-auto max-h-[300px]"><code>// Inicialização de toques/holds
+let touchHoldTimer = null;
+let isTouchDragReady = false;
+
+marquee.addEventListener('touchstart', (e) => {
+  isTouchActive = true; // Pausa autoplay imediatamente
+  if (touchHoldTimer) clearTimeout(touchHoldTimer);
+
+  const isCard = e.target.closest('.course-card-slide, .event-card-slide, .blog-card--slide, .blog-card');
+  if (!isCard) return;
+
+  touchStartX = e.touches[0].clientX;
+  touchStartY = e.touches[0].clientY;
+  isTouchDragReady = false;
+
+  // Habilita arraste apenas após 250ms de hold estável
+  touchHoldTimer = setTimeout(() => {
+    isTouchDragReady = true;
+    dragStart(currentTouchX, e.target);
+  }, 250);
+});
+
+marquee.addEventListener('touchmove', (e) => {
+  if (isTouchDragReady && isDragging) {
+    if (e.cancelable) e.preventDefault();
+    dragMove(e.touches[0].clientX);
+  } else {
+    // Cancela se houver movimento significativo (scroll nativo da página)
+    const dx = currentTouchX - touchStartX;
+    const dy = currentTouchY - touchStartY;
+    if (Math.sqrt(dx*dx + dy*dy) > 10) {
+      clearTimeout(touchHoldTimer);
+    }
+  }
+});</code></pre>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- ═══ 5. ÍCONES ═══ -->
@@ -637,6 +755,192 @@ const modal = document.getElementById('modal');
 document.getElementById('open-modal').addEventListener('click', () => modal.classList.add('open'));
 document.getElementById('close-modal').addEventListener('click', () => modal.classList.remove('open'));
 modal.addEventListener('click', (e) => { if (e.target === modal) modal.classList.remove('open'); });
+
+// Configuração do Drag-to-Scroll + Auto-Scroll Infinito por Hardware Transform para o DS
+const marquees = document.querySelectorAll('.courses-marquee, .events-marquee, .blog-marquee');
+marquees.forEach((marquee) => {
+  const track = marquee.querySelector('.courses-marquee-track, .events-marquee-track, .blog-marquee-track');
+  if (!track || track.children.length === 0) return;
+
+  let baseSpeed = 0.5;
+  let currentX = 0;
+  let isDragging = false;
+  let startX = 0;
+  let dragStartX = 0;
+  let hasDragged = false;
+  let isHovered = false;
+  let isTouchActive = false;
+  let rafId = null;
+
+  // Variáveis para touch e hold (mobile)
+  let touchStartX = 0;
+  let touchStartY = 0;
+  let currentTouchX = 0;
+  let currentTouchY = 0;
+  let touchHoldTimer = null;
+  let isTouchDragReady = false;
+
+  const getMaxScroll = () => {
+    const children = track.children;
+    const originalCount = Math.floor(children.length / 2);
+    if (originalCount > 0 && originalCount < children.length) {
+      return children[originalCount].offsetLeft - children[0].offsetLeft;
+    }
+    return track.scrollWidth / 2;
+  };
+
+  const updatePosition = () => {
+    track.style.transform = `translate3d(${currentX}px, 0px, 0px)`;
+  };
+
+  const step = () => {
+    const maxScroll = getMaxScroll();
+    if (maxScroll > 0 && !isDragging && !isHovered && !isTouchActive) {
+      currentX -= baseSpeed;
+      if (currentX <= -maxScroll) {
+        currentX += maxScroll;
+      }
+      updatePosition();
+    }
+    rafId = requestAnimationFrame(step);
+  };
+
+  const dragStart = (clientX, targetElement) => {
+    const isCard = targetElement.closest('.course-card-slide, .event-card-slide, .blog-card--slide, .blog-card');
+    if (!isCard) return false;
+
+    isDragging = true;
+    startX = clientX;
+    dragStartX = currentX;
+    hasDragged = false;
+    return true;
+  };
+
+  const dragMove = (clientX) => {
+    if (!isDragging) return;
+    const dx = clientX - startX;
+    if (Math.abs(dx) > 5) {
+      hasDragged = true;
+    }
+    currentX = dragStartX + dx;
+
+    const maxScroll = getMaxScroll();
+    if (maxScroll > 0) {
+      if (currentX <= -maxScroll) {
+        currentX += maxScroll;
+        startX = clientX;
+        dragStartX = currentX;
+      } else if (currentX > 0) {
+        currentX -= maxScroll;
+        startX = clientX;
+        dragStartX = currentX;
+      }
+    }
+    updatePosition();
+  };
+
+  const dragEnd = () => {
+    isDragging = false;
+  };
+
+  marquee.addEventListener('mousedown', (e) => {
+    if (e.button === 0) {
+      dragStart(e.clientX, e.target);
+    }
+  });
+
+  marquee.addEventListener('mousemove', (e) => {
+    if (isDragging) {
+      e.preventDefault();
+      dragMove(e.clientX);
+    }
+  });
+
+  marquee.addEventListener('mouseup', () => {
+    dragEnd();
+  });
+
+  marquee.addEventListener('mouseleave', () => {
+    isHovered = false;
+    dragEnd();
+  });
+
+  marquee.addEventListener('mouseenter', () => {
+    isHovered = true;
+  });
+
+  marquee.addEventListener('touchstart', (e) => {
+    isTouchActive = true;
+    if (touchHoldTimer) clearTimeout(touchHoldTimer);
+
+    const touch = e.touches[0];
+    const targetElement = e.target;
+
+    const isCard = targetElement.closest('.course-card-slide, .event-card-slide, .blog-card--slide, .blog-card');
+    if (!isCard) return;
+
+    touchStartX = touch.clientX;
+    touchStartY = touch.clientY;
+    currentTouchX = touch.clientX;
+    currentTouchY = touch.clientY;
+    isTouchDragReady = false;
+
+    touchHoldTimer = setTimeout(() => {
+      isTouchDragReady = true;
+      dragStart(currentTouchX, targetElement);
+    }, 250);
+  }, { passive: true });
+
+  marquee.addEventListener('touchmove', (e) => {
+    if (e.touches.length === 0) return;
+    const touch = e.touches[0];
+    currentTouchX = touch.clientX;
+    currentTouchY = touch.clientY;
+
+    if (isTouchDragReady && isDragging) {
+      if (e.cancelable) e.preventDefault();
+      dragMove(currentTouchX);
+    } else {
+      const dx = currentTouchX - touchStartX;
+      const dy = currentTouchY - touchStartY;
+      if (Math.sqrt(dx * dx + dy * dy) > 10) {
+        if (touchHoldTimer) {
+          clearTimeout(touchHoldTimer);
+          touchHoldTimer = null;
+        }
+      }
+    }
+  }, { passive: false });
+
+  marquee.addEventListener('touchend', () => {
+    if (touchHoldTimer) {
+      clearTimeout(touchHoldTimer);
+      touchHoldTimer = null;
+    }
+    isTouchDragReady = false;
+    dragEnd();
+    isTouchActive = false;
+  }, { passive: true });
+
+  marquee.addEventListener('touchcancel', () => {
+    if (touchHoldTimer) {
+      clearTimeout(touchHoldTimer);
+      touchHoldTimer = null;
+    }
+    isTouchDragReady = false;
+    dragEnd();
+    isTouchActive = false;
+  }, { passive: true });
+
+  marquee.addEventListener('click', (e) => {
+    if (hasDragged) {
+      e.preventDefault();
+    }
+  });
+
+  updatePosition();
+  rafId = requestAnimationFrame(step);
+});
 </script>
 
 

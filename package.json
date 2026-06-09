@@ -4,8 +4,8 @@
   "scripts": {
     "build": "node tools/deploy-build.mjs",
     "build:ci": "node tools/deploy-build.mjs",
-    "deploy": "FORCE_BUILD=1 npm run build && wrangler deploy",
-    "deploy:ci": "FORCE_BUILD=1 npm run build && wrangler deploy"
+    "deploy": "npm run build -- --force && wrangler deploy",
+    "deploy:ci": "npm run build -- --force && wrangler deploy"
   },
   "devDependencies": {
     "wrangler": "^4.98.0"

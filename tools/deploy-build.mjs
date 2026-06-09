@@ -21,7 +21,8 @@ async function countFiles(dir) {
 
 async function main() {
   const index = join(DIST, "index.html");
-  if (process.env.FORCE_BUILD !== "1") {
+  const isForce = process.env.FORCE_BUILD === "1" || process.argv.includes("--force");
+  if (!isForce) {
     try {
       await stat(index);
       const total = await countFiles(DIST);
@@ -36,6 +37,14 @@ async function main() {
   await mkdir(DIST, { recursive: true });
   await cp(SITE, DIST, { recursive: true });
   await cp(ASSETS, join(DIST, "assets"), { recursive: true });
+
+  // Remove o _redirects do Netlify que conflita com o roteamento da Cloudflare
+  try {
+    await rm(join(DIST, "_redirects"), { force: true });
+    console.log("Removido dist/_redirects (Netlify) para evitar conflitos na Cloudflare");
+  } catch (err) {
+    console.warn("Aviso: não foi possível remover dist/_redirects:", err);
+  }
 
   try {
     await stat(join(DIST, "index.html"));

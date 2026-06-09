@@ -948,6 +948,218 @@ document.addEventListener('DOMContentLoaded', () => {
   }, { threshold: 0.08 });
   document.querySelectorAll('.reveal').forEach((el) => revObs.observe(el));
 
+  // Configuração do Drag-to-Scroll + Auto-Scroll Infinito por Hardware Transform
+  const marquees = document.querySelectorAll('.courses-marquee, .events-marquee, .blog-marquee');
+  marquees.forEach((marquee) => {
+    const track = marquee.querySelector('.courses-marquee-track, .events-marquee-track, .blog-marquee-track');
+    if (!track || track.children.length === 0) return;
+
+    // Ajusta velocidades específicas para manter a proporção das animações originais
+    let baseSpeed = 0.5;
+    if (marquee.classList.contains('events-marquee')) {
+      baseSpeed = 0.45;
+    } else if (marquee.classList.contains('blog-marquee')) {
+      baseSpeed = 0.4;
+    } else if (marquee.classList.contains('courses-marquee--slow')) {
+      baseSpeed = 0.35;
+    } else if (marquee.classList.contains('courses-marquee')) {
+      baseSpeed = 0.55;
+    }
+
+    let currentX = 0;
+    let isDragging = false;
+    let startX = 0;
+    let dragStartX = 0;
+    let hasDragged = false;
+    let isHovered = false;
+    let isTouchActive = false;
+    let rafId = null;
+
+    // Variáveis para touch e hold (mobile)
+    let touchStartX = 0;
+    let touchStartY = 0;
+    let currentTouchX = 0;
+    let currentTouchY = 0;
+    let touchHoldTimer = null;
+    let isTouchDragReady = false;
+
+    // Função auxiliar para calcular o ponto exato da cópia duplicada (evita pulos por conta dos gaps)
+    const getMaxScroll = () => {
+      const children = track.children;
+      const originalCount = Math.floor(children.length / 2);
+      if (originalCount > 0 && originalCount < children.length) {
+        return children[originalCount].offsetLeft - children[0].offsetLeft;
+      }
+      return track.scrollWidth / 2;
+    };
+
+    // Aplica o deslocamento usando transformações 3D aceleradas por hardware
+    const updatePosition = () => {
+      track.style.transform = `translate3d(${currentX}px, 0px, 0px)`;
+    };
+
+    const step = () => {
+      const maxScroll = getMaxScroll();
+      if (maxScroll > 0 && !isDragging && !isHovered && !isTouchActive) {
+        currentX -= baseSpeed;
+        if (currentX <= -maxScroll) {
+          currentX += maxScroll;
+        }
+        updatePosition();
+      }
+      rafId = requestAnimationFrame(step);
+    };
+
+    // Início do arraste (tanto mouse quanto toque)
+    const dragStart = (clientX, targetElement) => {
+      // O arraste só é permitido se for iniciado diretamente sobre um card
+      const isCard = targetElement.closest('.course-card-slide, .event-card-slide, .blog-card--slide, .blog-card');
+      if (!isCard) return false;
+
+      isDragging = true;
+      startX = clientX;
+      dragStartX = currentX;
+      hasDragged = false;
+      return true;
+    };
+
+    // Movimento do arraste
+    const dragMove = (clientX) => {
+      if (!isDragging) return;
+      const dx = clientX - startX;
+      if (Math.abs(dx) > 5) {
+        hasDragged = true;
+      }
+      currentX = dragStartX + dx;
+
+      // Loop infinito dinâmico durante a movimentação manual
+      const maxScroll = getMaxScroll();
+      if (maxScroll > 0) {
+        if (currentX <= -maxScroll) {
+          currentX += maxScroll;
+          startX = clientX;
+          dragStartX = currentX;
+        } else if (currentX > 0) {
+          currentX -= maxScroll;
+          startX = clientX;
+          dragStartX = currentX;
+        }
+      }
+      updatePosition();
+    };
+
+    // Fim do arraste
+    const dragEnd = () => {
+      isDragging = false;
+    };
+
+    // Eventos de Mouse (Desktop)
+    marquee.addEventListener('mousedown', (e) => {
+      if (e.button === 0) { // Clique esquerdo apenas
+        dragStart(e.clientX, e.target);
+      }
+    });
+
+    marquee.addEventListener('mousemove', (e) => {
+      if (isDragging) {
+        e.preventDefault();
+        dragMove(e.clientX);
+      }
+    });
+
+    marquee.addEventListener('mouseup', () => {
+      dragEnd();
+    });
+
+    marquee.addEventListener('mouseleave', () => {
+      isHovered = false;
+      dragEnd();
+    });
+
+    marquee.addEventListener('mouseenter', () => {
+      isHovered = true;
+    });
+
+    // Eventos de Toque (Mobile/Tablet)
+    marquee.addEventListener('touchstart', (e) => {
+      isTouchActive = true; // Para o autoplay imediatamente ao tocar (mobile)
+      if (touchHoldTimer) clearTimeout(touchHoldTimer);
+
+      const touch = e.touches[0];
+      const targetElement = e.target;
+
+      // Verifica se o toque iniciou sobre um card
+      const isCard = targetElement.closest('.course-card-slide, .event-card-slide, .blog-card--slide, .blog-card');
+      if (!isCard) return;
+
+      touchStartX = touch.clientX;
+      touchStartY = touch.clientY;
+      currentTouchX = touch.clientX;
+      currentTouchY = touch.clientY;
+      isTouchDragReady = false;
+
+      // Inicia timer para ativar o arraste apenas ao segurar o dedo por 250ms sobre o card
+      touchHoldTimer = setTimeout(() => {
+        isTouchDragReady = true;
+        dragStart(currentTouchX, targetElement);
+      }, 250);
+    }, { passive: true });
+
+    marquee.addEventListener('touchmove', (e) => {
+      if (e.touches.length === 0) return;
+      const touch = e.touches[0];
+      currentTouchX = touch.clientX;
+      currentTouchY = touch.clientY;
+
+      if (isTouchDragReady && isDragging) {
+        // Bloqueia a rolagem vertical da página se o usuário estiver ativamente arrastando o slider
+        if (e.cancelable) e.preventDefault();
+        dragMove(currentTouchX);
+      } else {
+        // Se mover significativamente antes dos 250ms, cancela o hold timer para permitir rolagem padrão da página
+        const dx = currentTouchX - touchStartX;
+        const dy = currentTouchY - touchStartY;
+        if (Math.sqrt(dx * dx + dy * dy) > 10) {
+          if (touchHoldTimer) {
+            clearTimeout(touchHoldTimer);
+            touchHoldTimer = null;
+          }
+        }
+      }
+    }, { passive: false });
+
+    marquee.addEventListener('touchend', () => {
+      if (touchHoldTimer) {
+        clearTimeout(touchHoldTimer);
+        touchHoldTimer = null;
+      }
+      isTouchDragReady = false;
+      dragEnd();
+      isTouchActive = false; // Retoma o autoplay imediatamente
+    }, { passive: true });
+
+    marquee.addEventListener('touchcancel', () => {
+      if (touchHoldTimer) {
+        clearTimeout(touchHoldTimer);
+        touchHoldTimer = null;
+      }
+      isTouchDragReady = false;
+      dragEnd();
+      isTouchActive = false; // Retoma o autoplay imediatamente
+    }, { passive: true });
+
+    // Evita redirecionamento acidental ao clicar e arrastar em um card de link
+    marquee.addEventListener('click', (e) => {
+      if (hasDragged) {
+        e.preventDefault();
+      }
+    });
+
+    // Inicializa a posição e começa a animação
+    updatePosition();
+    rafId = requestAnimationFrame(step);
+  });
+
   const ebookStage = document.getElementById('ebook-mockup-stage');
   const ebookBook = ebookStage?.querySelector('.ebook-mockup-book');
   const ebookMotionOk = !window.matchMedia('(prefers-reduced-motion: reduce)').matches;

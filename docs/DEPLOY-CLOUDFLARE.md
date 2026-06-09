@@ -60,7 +60,7 @@ No painel Cloudflare:
 | **Production branch** | `main` |
 | **Root directory** | `/` *(raiz do repo)* |
 | **Build command** | *(deixe vazio)* |
-| **Deploy command** | `npm ci && FORCE_BUILD=1 npm run build && npx wrangler deploy` |
+| **Deploy command** | `npm ci && npm run build -- --force && npx wrangler deploy` |
 
 4. **Environment variables:** nenhuma obrigatória.
 5. **API Token:** a Cloudflare cria automaticamente ao conectar o Git — não precisa token manual.
@@ -142,7 +142,7 @@ A pasta publicada é `site/` (fonte) → copiada para `dist/` (deploy):
 
 ```bash
 # Rebuild dist/ a partir de site/ + assets/
-FORCE_BUILD=1 npm run build
+npm run build -- --force
 
 # Commit e push
 git add site/ dist/

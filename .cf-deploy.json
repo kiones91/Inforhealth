@@ -1,6 +1,6 @@
 {
   "build_command": "",
-  "deploy_command": "npm ci && FORCE_BUILD=1 npm run build && npx wrangler deploy",
+  "deploy_command": "npm ci && npm run build -- --force && npx wrangler deploy",
   "production_branch": "main",
   "root_directory": "/",
   "custom_domain": "inforhealth.buffallos.com.br",
@@ -10,5 +10,5 @@
     "content": "100::",
     "proxied": true
   },
-  "comment": "Workers > inforhealth > Settings > Build. Build vazio; Deploy: npm ci && npx wrangler deploy. DNS AAAA 100:: antes de criar o Worker. Ver docs/DEPLOY-CLOUDFLARE.md"
+  "comment": "Workers > inforhealth > Settings > Build. Build vazio; Deploy: npm ci && npm run build -- --force && npx wrangler deploy. DNS AAAA 100:: antes de criar o Worker. Ver docs/DEPLOY-CLOUDFLARE.md"
 }
