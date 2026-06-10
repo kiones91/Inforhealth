@@ -83,6 +83,6 @@ Etapa final de implantação em produção.
   - Worker e domínio de homologação já estão previstos para a stack atual em Cloudflare.
 
 - [ ] Alteração de DNS para apontamento ao domínio definitivo unificado.
-- [ ] Ativação final dos redirecionamentos 301 em produção (Netlify, Vercel ou Apache).
+- [x] Ativação final dos redirecionamentos 301 em produção (Netlify, Vercel ou Apache): configurado e testado com redirecionamentos 301 nativos ativos na Cloudflare Workers através do arquivo `_redirects`.
 - [ ] Monitoramento de logs de erro por 72 horas após o lançamento.
 - [ ] Backup de segurança final da antiga plataforma WordPress.
