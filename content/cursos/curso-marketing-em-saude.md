@@ -4,7 +4,7 @@
 
 **Modalidade:** Ao Vivo
 
-![Marketing em Saúde](../imagens/cursos/marketing-em-saude.png)
+![Marketing em Saúde](../imagens/cursos/marketing-em-saude.webp)
 
 ## Resumo
 

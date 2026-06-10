@@ -66,8 +66,11 @@ def esc(s: str) -> str:
 
 def render_page(slug: str, short_title: str, meta: dict, modality_key: str) -> str:
     icon, mod_label = BADGE.get(modality_key, BADGE["ao-vivo"])
-    img = meta["image"] or ("scih-seguranca-paciente.webp" if slug == "seguranca-do-paciente" else f"{slug}.webp")
+    img = meta["image"] or f"{slug}.webp"
+    if img:
+        img = str(Path(img).with_suffix(".webp"))
     desc = meta["resumo"] or f"Curso {short_title} — Inforhealth Educação e Excelência em Saúde."
+
     page_title = f"{short_title} — Inforhealth Educação"
     meta_desc = f"Curso {short_title} ({MODALITY_LABEL.get(modality_key, 'Ao Vivo')}). {desc[:120]}"
 

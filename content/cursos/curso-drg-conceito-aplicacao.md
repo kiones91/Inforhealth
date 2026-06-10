@@ -4,7 +4,7 @@
 
 **Modalidade:** Ao Vivo
 
-![DRG (Diagnosis-Related Groups) do Conceito à Aplicação](../imagens/cursos/drg-conceito-aplicacao.png)
+![DRG (Diagnosis-Related Groups) do Conceito à Aplicação](../imagens/cursos/drg-conceito-aplicacao.webp)
 
 ## Resumo
 

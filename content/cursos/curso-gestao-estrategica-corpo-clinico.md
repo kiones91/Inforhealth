@@ -4,7 +4,7 @@
 
 **Modalidade:** Ao Vivo
 
-![Intensivo em Gestão Estratégica do Corpo Clínico](../imagens/cursos/gestao-estrategica-corpo-clinico.png)
+![Intensivo em Gestão Estratégica do Corpo Clínico](../imagens/cursos/gestao-estrategica-corpo-clinico.webp)
 
 ## Resumo
 

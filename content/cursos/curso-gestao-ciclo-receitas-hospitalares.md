@@ -4,7 +4,7 @@
 
 **Modalidade:** Ao Vivo
 
-![Gestão do Ciclo de Receitas Hospitalares](../imagens/cursos/gestao-ciclo-receitas-hospitalares.png)
+![Gestão do Ciclo de Receitas Hospitalares](../imagens/cursos/gestao-ciclo-receitas-hospitalares.webp)
 
 ## Resumo
 

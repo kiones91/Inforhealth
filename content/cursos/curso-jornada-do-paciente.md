@@ -5,7 +5,7 @@
 **Modalidade:** Gravado
 **Carga horária:** 1 hora
 
-![Implantação e Gestão da Jornada do Paciente](../imagens/cursos/jornada-do-paciente.png)
+![Implantação e Gestão da Jornada do Paciente](../imagens/cursos/jornada-do-paciente.webp)
 
 ## Resumo
 

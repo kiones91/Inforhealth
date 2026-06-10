@@ -4,7 +4,7 @@
 
 **Modalidade:** Ao Vivo
 
-![Formação de Auditores Internos de Qualidade (Manual ONA 2026)](../imagens/cursos/formacao-auditores-ona-2026.png)
+![Formação de Auditores Internos de Qualidade (Manual ONA 2026)](../imagens/cursos/formacao-auditores-ona-2026.webp)
 
 ## Resumo
 

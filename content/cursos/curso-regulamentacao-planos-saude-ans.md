@@ -4,7 +4,7 @@
 
 **Modalidade:** Ao Vivo
 
-![Regulamentação de Planos de Saúde e ANS](../imagens/cursos/regulamentacao-planos-saude-ans.png)
+![Regulamentação de Planos de Saúde e ANS](../imagens/cursos/regulamentacao-planos-saude-ans.webp)
 
 ## Resumo
 

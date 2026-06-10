@@ -4,7 +4,7 @@
 
 **Modalidade:** Ao Vivo
 
-![Governança, Compliance e Acreditação em Operadoras de Planos de Saúde](../imagens/cursos/governanca-compliance-acreditacao.png)
+![Governança, Compliance e Acreditação em Operadoras de Planos de Saúde](../imagens/cursos/governanca-compliance-acreditacao.webp)
 
 ## Resumo
 

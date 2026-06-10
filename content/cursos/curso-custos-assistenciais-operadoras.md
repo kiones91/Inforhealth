@@ -4,7 +4,7 @@
 
 **Modalidade:** Ao Vivo
 
-![Custos Assistenciais para Operadoras de Planos de Saúde](../imagens/cursos/custos-assistenciais-operadoras.png)
+![Custos Assistenciais para Operadoras de Planos de Saúde](../imagens/cursos/custos-assistenciais-operadoras.webp)
 
 ## Resumo
 

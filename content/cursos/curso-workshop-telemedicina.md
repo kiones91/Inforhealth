@@ -4,7 +4,7 @@
 
 **Modalidade:** Ao Vivo
 
-![Workshop Telemedicina](../imagens/cursos/workshop-telemedicina.png)
+![Workshop Telemedicina](../imagens/cursos/workshop-telemedicina.webp)
 
 ## Resumo
 

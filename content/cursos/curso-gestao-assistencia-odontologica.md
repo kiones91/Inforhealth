@@ -5,7 +5,7 @@
 **Modalidade:** Gravado
 **Carga horária:** 10 horas
 
-![Gestão da Assistência Odontológica](../imagens/cursos/gestao-assistencia-odontologica.png)
+![Gestão da Assistência Odontológica](../imagens/cursos/gestao-assistencia-odontologica.webp)
 
 ## Resumo
 

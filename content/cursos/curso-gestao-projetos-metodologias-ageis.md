@@ -4,7 +4,7 @@
 
 **Modalidade:** Ao Vivo
 
-![Gestão de Projetos e Metodologias Ágeis em Saúde](../imagens/cursos/gestao-projetos-metodologias-ageis.png)
+![Gestão de Projetos e Metodologias Ágeis em Saúde](../imagens/cursos/gestao-projetos-metodologias-ageis.webp)
 
 ## Resumo
 

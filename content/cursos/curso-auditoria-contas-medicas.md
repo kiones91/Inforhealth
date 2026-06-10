@@ -4,7 +4,7 @@
 
 **Modalidade:** Ao Vivo
 
-![Auditoria de Contas Médicas](../imagens/cursos/auditoria-contas-medicas.png)
+![Auditoria de Contas Médicas](../imagens/cursos/auditoria-contas-medicas.webp)
 
 ## Resumo
 

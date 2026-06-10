@@ -4,7 +4,7 @@
 
 **Modalidade:** Ao Vivo
 
-![Formação em Gestão de Contratos e Negociação na Saúde Suplementar](../imagens/cursos/formacao-gestao-contratos-negociacao.png)
+![Formação em Gestão de Contratos e Negociação na Saúde Suplementar](../imagens/cursos/formacao-gestao-contratos-negociacao.webp)
 
 ## Resumo
 

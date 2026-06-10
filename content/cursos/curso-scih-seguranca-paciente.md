@@ -5,7 +5,7 @@
 **Modalidade:** Gravado
 **Carga horária:** 8 horas
 
-![SCIH e Segurança do Paciente](../imagens/cursos/scih-seguranca-paciente.png)
+![SCIH e Segurança do Paciente](../imagens/cursos/scih-seguranca-paciente.webp)
 
 ## Resumo
 

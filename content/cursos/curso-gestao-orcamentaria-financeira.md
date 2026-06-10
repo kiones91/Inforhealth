@@ -4,7 +4,7 @@
 
 **Modalidade:** Ao Vivo
 
-![Gestão Orçamentária e Financeira Em Saúde](../imagens/cursos/gestao-orcamentaria-financeira.png)
+![Gestão Orçamentária e Financeira Em Saúde](../imagens/cursos/gestao-orcamentaria-financeira.webp)
 
 ## Resumo
 

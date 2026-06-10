@@ -4,7 +4,7 @@
 
 **Modalidade:** Ao Vivo
 
-![Gestão de Pessoas em Saúde](../imagens/cursos/gestao-pessoas-em-saude.png)
+![Gestão de Pessoas em Saúde](../imagens/cursos/gestao-pessoas-em-saude.webp)
 
 ## Resumo
 

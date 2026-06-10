@@ -4,7 +4,7 @@
 
 **Modalidade:** Ao Vivo
 
-![Recursos de Glosas na Saúde Suplementar](../imagens/cursos/recursos-glosas-saude-suplementar.png)
+![Recursos de Glosas na Saúde Suplementar](../imagens/cursos/recursos-glosas-saude-suplementar.webp)
 
 ## Resumo
 

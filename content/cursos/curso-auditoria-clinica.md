@@ -4,7 +4,7 @@
 
 **Modalidade:** Ao Vivo
 
-![Auditoria Clínica](../imagens/cursos/auditoria-clinica.png)
+![Auditoria Clínica](../imagens/cursos/auditoria-clinica.webp)
 
 ## Resumo
 

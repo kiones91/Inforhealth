@@ -4,7 +4,7 @@
 
 **Modalidade:** Mentoria
 
-![Mentoria de Auditor Interno de Qualidade](../imagens/cursos/mentoria-auditor-interno-qualidade.png)
+![Mentoria de Auditor Interno de Qualidade](../imagens/cursos/mentoria-auditor-interno-qualidade.webp)
 
 ## Resumo
 

@@ -4,7 +4,7 @@
 
 **Modalidade:** Ao Vivo
 
-![Governança 360° na Saúde Suplementar: Da Regulação da ANS à Sustentabilidade do Negócio](../imagens/cursos/governanca-360-saude-suplementar.png)
+![Governança 360° na Saúde Suplementar: Da Regulação da ANS à Sustentabilidade do Negócio](../imagens/cursos/governanca-360-saude-suplementar.webp)
 
 ## Resumo
 

@@ -5,7 +5,7 @@
 **Modalidade:** Gravado
 **Carga horária:** 2 horas
 
-![Liderança para Profissionais de Saúde](../imagens/cursos/lideranca-profissionais-saude.png)
+![Liderança para Profissionais de Saúde](../imagens/cursos/lideranca-profissionais-saude.webp)
 
 ## Resumo
 

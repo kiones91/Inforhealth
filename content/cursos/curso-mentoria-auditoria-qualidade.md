@@ -4,7 +4,7 @@
 
 **Modalidade:** Mentoria
 
-![Mentoria Auditoria Interna e Gestão da Qualidade em Saúde](../imagens/cursos/mentoria-auditoria-qualidade.png)
+![Mentoria Auditoria Interna e Gestão da Qualidade em Saúde](../imagens/cursos/mentoria-auditoria-qualidade.webp)
 
 ## Resumo
 

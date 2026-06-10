@@ -4,7 +4,7 @@
 
 **Modalidade:** Ao Vivo
 
-![Gestão de Faturamento em Saúde](../imagens/cursos/gestao-faturamento-em-saude.png)
+![Gestão de Faturamento em Saúde](../imagens/cursos/gestao-faturamento-em-saude.webp)
 
 ## Resumo
 

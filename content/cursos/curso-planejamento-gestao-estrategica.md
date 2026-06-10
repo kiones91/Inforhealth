@@ -4,7 +4,7 @@
 
 **Modalidade:** Ao Vivo
 
-![Planejamento e Gestão Estratégica em Saúde](../imagens/cursos/planejamento-gestao-estrategica.png)
+![Planejamento e Gestão Estratégica em Saúde](../imagens/cursos/planejamento-gestao-estrategica.webp)
 
 ## Resumo
 

@@ -4,7 +4,7 @@
 
 **Modalidade:** Ao Vivo
 
-![Governança Clínica: Excelência, Sustentabilidade e Valor Assistencial na Prática](../imagens/cursos/governanca-clinica.png)
+![Governança Clínica: Excelência, Sustentabilidade e Valor Assistencial na Prática](../imagens/cursos/governanca-clinica.webp)
 
 ## Resumo
 

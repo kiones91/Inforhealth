@@ -4,7 +4,7 @@
 
 **Modalidade:** Ao Vivo
 
-![Plano Terapêutico na Prática](../imagens/cursos/plano-terapeutico-na-pratica.png)
+![Plano Terapêutico na Prática](../imagens/cursos/plano-terapeutico-na-pratica.webp)
 
 ## Resumo
 

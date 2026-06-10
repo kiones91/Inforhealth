@@ -4,7 +4,7 @@
 
 **Modalidade:** Ao Vivo
 
-![Gestão de Tecnologias e Infraestrutura em Saúde](../imagens/cursos/gestao-tecnologias-infraestrutura.png)
+![Gestão de Tecnologias e Infraestrutura em Saúde](../imagens/cursos/gestao-tecnologias-infraestrutura.webp)
 
 ## Resumo
 

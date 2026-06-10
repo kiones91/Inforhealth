@@ -5,7 +5,7 @@
 **Modalidade:** Gravado
 **Carga horária:** 12 horas
 
-![Ferramentas de Gestão da Qualidade em Saúde](../imagens/cursos/ferramentas-gestao-qualidade.png)
+![Ferramentas de Gestão da Qualidade em Saúde](../imagens/cursos/ferramentas-gestao-qualidade.webp)
 
 ## Resumo
 

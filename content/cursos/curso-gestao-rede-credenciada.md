@@ -4,7 +4,7 @@
 
 **Modalidade:** Ao Vivo
 
-![Gestão de Rede Credenciada e Credenciamento em Saúde Suplementar](../imagens/cursos/gestao-rede-credenciada.png)
+![Gestão de Rede Credenciada e Credenciamento em Saúde Suplementar](../imagens/cursos/gestao-rede-credenciada.webp)
 
 ## Resumo
 

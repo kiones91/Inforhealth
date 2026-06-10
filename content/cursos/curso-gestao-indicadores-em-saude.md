@@ -4,7 +4,7 @@
 
 **Modalidade:** Ao Vivo
 
-![Gestão de Indicadores em Saúde](../imagens/cursos/gestao-indicadores-em-saude.png)
+![Gestão de Indicadores em Saúde](../imagens/cursos/gestao-indicadores-em-saude.webp)
 
 ## Resumo
 

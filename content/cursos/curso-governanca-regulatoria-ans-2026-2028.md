@@ -4,7 +4,7 @@
 
 **Modalidade:** Ao Vivo
 
-![Governança Regulatório-Estratégica na Saúde Suplementar (ANS 2026–2028)](../imagens/cursos/governanca-regulatoria-ans-2026-2028.png)
+![Governança Regulatório-Estratégica na Saúde Suplementar (ANS 2026–2028)](../imagens/cursos/governanca-regulatoria-ans-2026-2028.webp)
 
 ## Resumo
 

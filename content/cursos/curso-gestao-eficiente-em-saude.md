@@ -4,7 +4,7 @@
 
 **Modalidade:** Ao Vivo
 
-![Gestão Eficiente em Saúde](../imagens/cursos/gestao-eficiente-em-saude.png)
+![Gestão Eficiente em Saúde](../imagens/cursos/gestao-eficiente-em-saude.webp)
 
 ## Resumo
 

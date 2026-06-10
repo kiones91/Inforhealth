@@ -4,7 +4,7 @@
 
 **Modalidade:** Ao Vivo
 
-![Gestão de Suprimentos Hospitalares](../imagens/cursos/gestao-suprimentos-hospitalares.png)
+![Gestão de Suprimentos Hospitalares](../imagens/cursos/gestao-suprimentos-hospitalares.webp)
 
 ## Resumo
 
