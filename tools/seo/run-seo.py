@@ -20,9 +20,9 @@ def run_npm_tailwind() -> None:
     frontend = TOOLS / "frontend"
     if not (frontend / "node_modules").exists():
         print("\n>> npm install (tailwind)")
-        subprocess.run(["npm", "install"], check=True, cwd=str(frontend))
+        subprocess.run(["npm", "install"], check=True, cwd=str(frontend), shell=True)
     print("\n>> npm run build (tailwind)")
-    subprocess.run(["npm", "run", "build"], check=True, cwd=str(frontend))
+    subprocess.run(["npm", "run", "build"], check=True, cwd=str(frontend), shell=True)
 
 
 def main() -> None:

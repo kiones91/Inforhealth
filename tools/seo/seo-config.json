@@ -1,14 +1,14 @@
 {
   "site_url": "https://edu.inforhealth.com.br",
   "site_name": "Inforhealth Educação",
-  "default_og_image": "/assets/imagens/institucional/logo-inforhealth-cursos.png",
+  "default_og_image": "/assets/imagens/institucional/logo-inforhealth-cursos.webp",
   "locale": "pt_BR",
   "ga4_measurement_id": "",
   "organization": {
     "name": "Inforhealth Educação e Excelência em Saúde",
     "legal_name": "Inforhealth Educação e Excelência em Saúde",
     "url": "https://edu.inforhealth.com.br",
-    "logo": "https://edu.inforhealth.com.br/assets/imagens/institucional/logo-inforhealth-2020.png",
+    "logo": "https://edu.inforhealth.com.br/assets/imagens/institucional/logo-inforhealth-2020.webp",
     "email": "contato@inforhealth.com.br",
     "telephone": "+55-19-99777-3084",
     "address_locality": "Campinas",

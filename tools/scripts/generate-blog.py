@@ -288,15 +288,16 @@ def ds_head(title, description, asset_prefix=""):
     favicon = f"{asset_prefix}../assets/imagens/institucional/favicon.png"
     return f"""  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{title}</title>
-  <meta name="description" content="{description}">
-  <link rel="icon" href="{favicon}">
+  <title>{{title}}</title>
+  <meta name="description" content="{{description}}">
+  <link rel="icon" href="{{favicon}}">
   <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
+  <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js" defer></script>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet"/>
-  <link href="{css}" rel="stylesheet"/>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Geist+Mono:wght@400;500&display=swap" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet" media="print" onload="this.media='all'"/>
+  <link href="{{css}}" rel="stylesheet"/>
 {TAILWIND_CONFIG}
   <style>
     body {{ font-family: 'Inter', sans-serif; }}
@@ -353,10 +354,7 @@ document.addEventListener('DOMContentLoaded', () => {{
   const aosObs = new IntersectionObserver((entries) => {{
     entries.forEach((e) => {{ if (e.isIntersecting) {{ e.target.classList.add('animate'); aosObs.unobserve(e.target); }} }});
   }}, {{ threshold: 0.1 }});
-  document.querySelectorAll('.animate-on-scroll').forEach((el) => {{
-    const r = el.getBoundingClientRect();
-    if (r.top < innerHeight && r.bottom > 0) el.classList.add('animate'); else aosObs.observe(el);
-  }});
+  document.querySelectorAll('.animate-on-scroll').forEach((el) => aosObs.observe(el));
   const revObs = new IntersectionObserver((entries) => {{
     entries.forEach((e) => {{ if (e.isIntersecting) e.target.classList.add('active'); }});
   }}, {{ threshold: 0.08 }});

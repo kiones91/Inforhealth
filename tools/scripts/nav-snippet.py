@@ -58,7 +58,7 @@ def site_header_nav(
     return f"""  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-ih-primary/10">
     <nav class="flex items-center justify-between gap-3 px-6 lg:px-12 py-4">
       <a href="{asset_prefix}index.html" class="flex items-center group shrink-0"{logo_current}>
-        <img src="{asset_prefix}../assets/imagens/institucional/logo-inforhealth-2020.png" alt="Inforhealth — Educação e Excelência em Saúde" class="{logo_class}"/>
+        <img src="{asset_prefix}../assets/imagens/institucional/logo-inforhealth-2020.webp" alt="Inforhealth — Educação e Excelência em Saúde" class="{logo_class}" width="120" height="38"/>
       </a>
       <div class="site-nav-desktop hidden lg:flex items-center gap-5">{nav_items}
       </div>

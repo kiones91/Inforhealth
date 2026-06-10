@@ -66,7 +66,7 @@ def esc(s: str) -> str:
 
 def render_page(slug: str, short_title: str, meta: dict, modality_key: str) -> str:
     icon, mod_label = BADGE.get(modality_key, BADGE["ao-vivo"])
-    img = meta["image"] or ("scih-seguranca-paciente.png" if slug == "seguranca-do-paciente" else f"{slug}.png")
+    img = meta["image"] or ("scih-seguranca-paciente.webp" if slug == "seguranca-do-paciente" else f"{slug}.webp")
     desc = meta["resumo"] or f"Curso {short_title} — Inforhealth Educação e Excelência em Saúde."
     page_title = f"{short_title} — Inforhealth Educação"
     meta_desc = f"Curso {short_title} ({MODALITY_LABEL.get(modality_key, 'Ao Vivo')}). {desc[:120]}"
@@ -103,10 +103,11 @@ def render_page(slug: str, short_title: str, meta: dict, modality_key: str) -> s
   <title>{esc(page_title)}</title>
   <meta name="description" content="{esc(meta_desc)}">
   <link rel="icon" href="../../assets/imagens/institucional/favicon.png">
-  <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
+  <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js" defer></script>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'"/>
   <link href="../css/tailwind.min.css" rel="stylesheet"/>
   <link href="../css/design-system.css" rel="stylesheet"/>
 </head>

@@ -161,9 +161,9 @@ def build_page_seo(config: dict, rel: str, content: str, blog_index: dict) -> tu
 
     elif kind == "curso":
         slug = course_slug_from_path(rel)
-        og_image = f"/assets/imagens/cursos/{slug}.png"
+        og_image = f"/assets/imagens/cursos/{slug}.webp"
         if slug == "seguranca-do-paciente":
-            og_image = "/assets/imagens/cursos/scih-seguranca-paciente.png"
+            og_image = "/assets/imagens/cursos/scih-seguranca-paciente.webp"
         modality = "ao-vivo"
         if "mentoria" in rel or "mentoria" in title.lower():
             modality = "mentoria"

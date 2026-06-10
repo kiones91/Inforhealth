@@ -79,7 +79,7 @@ cards = []
 for i, c in enumerate(courses):
     slug = c['slug']
     path = c['file']
-    img = 'scih-seguranca-paciente.png' if slug == 'seguranca-do-paciente' else None
+    img = 'scih-seguranca-paciente.webp' if slug == 'seguranca-do-paciente' else None
     carga = None
     resumo = ''
     if os.path.exists(path):

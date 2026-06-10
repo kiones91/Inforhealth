@@ -36,7 +36,7 @@ def footer_social_html() -> str:
 def closing_zone_footer(asset_prefix=""):
     """asset_prefix: '' para raiz do esqueleto, '../../' para blog/artigos/."""
     p = asset_prefix
-    img = f"{p}../assets/imagens/institucional/logo-inforhealth-2020.png"
+    img = f"{p}../assets/imagens/institucional/logo-inforhealth-2020.webp"
     return f"""<!-- CTA + FOOTER -->
 <section id="cta-final" class="closing-zone px-8 lg:px-16 xl:px-24 pb-0">
   <div class="cta-final-card reveal border-gradient">
