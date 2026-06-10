@@ -42,8 +42,10 @@ def main() -> None:
         cwd=str(TOOLS),
     )
     run("inject-seo.py")
+    run("generate_redirects_data.py")
     run("generate-sitemap.py")
     print("\nOK Protocolo SEO concluido (imagens locais, tailwind, GA4, footer social)")
+
 
 
 if __name__ == "__main__":

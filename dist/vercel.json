@@ -5,9 +5,857 @@
     {
       "source": "/(.*)",
       "headers": [
-        { "key": "X-Content-Type-Options", "value": "nosniff" },
-        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" }
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        }
       ]
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/a-importancia-da-gestao-efetiva-do-corpo-clinico-em-organizacoes-de-saude/",
+      "destination": "/blog/artigos/a-importancia-da-gestao-efetiva-do-corpo-clinico-em-organizacoes-de-saude",
+      "permanent": true
+    },
+    {
+      "source": "/blog-criterios-diagnosticos-de-infeccao-relacionada-a-assistencia-a-saude/",
+      "destination": "/blog/artigos/blog-criterios-diagnosticos-de-infeccao-relacionada-a-assistencia-a-saude",
+      "permanent": true
+    },
+    {
+      "source": "/a-importancia-da-gestao-efetiva-do-corpo-clinico-em-organizacoes-de-saude",
+      "destination": "/blog/artigos/a-importancia-da-gestao-efetiva-do-corpo-clinico-em-organizacoes-de-saude",
+      "permanent": true
+    },
+    {
+      "source": "/blog-criterios-diagnosticos-de-infeccao-relacionada-a-assistencia-a-saude",
+      "destination": "/blog/artigos/blog-criterios-diagnosticos-de-infeccao-relacionada-a-assistencia-a-saude",
+      "permanent": true
+    },
+    {
+      "source": "/modelo-para-construcao-e-gestao-de-protocolo-clinico-da-inforhealth/",
+      "destination": "/blog/artigos/modelo-para-construcao-e-gestao-de-protocolo-clinico-da-inforhealth",
+      "permanent": true
+    },
+    {
+      "source": "/modelo-para-construcao-e-gestao-de-protocolo-clinico-da-inforhealth",
+      "destination": "/blog/artigos/modelo-para-construcao-e-gestao-de-protocolo-clinico-da-inforhealth",
+      "permanent": true
+    },
+    {
+      "source": "/abril-pela-seguranca-do-paciente-inforhealth-controle-de-infeccao/",
+      "destination": "/blog/artigos/abril-pela-seguranca-do-paciente-inforhealth-controle-de-infeccao",
+      "permanent": true
+    },
+    {
+      "source": "/abril-pela-seguranca-do-paciente-inforhealth-controle-de-infeccao",
+      "destination": "/blog/artigos/abril-pela-seguranca-do-paciente-inforhealth-controle-de-infeccao",
+      "permanent": true
+    },
+    {
+      "source": "/a-importancia-da-gestao-por-processos-em-organizacoes-de-saude/",
+      "destination": "/blog/artigos/a-importancia-da-gestao-por-processos-em-organizacoes-de-saude",
+      "permanent": true
+    },
+    {
+      "source": "/modelo-de-plano-de-acao-para-conformidade-com-a-rn-518-da-ans/",
+      "destination": "/blog/artigos/modelo-de-plano-de-acao-para-conformidade-com-a-rn-518-da-ans",
+      "permanent": true
+    },
+    {
+      "source": "/a-importancia-da-gestao-por-processos-em-organizacoes-de-saude",
+      "destination": "/blog/artigos/a-importancia-da-gestao-por-processos-em-organizacoes-de-saude",
+      "permanent": true
+    },
+    {
+      "source": "/modelo-de-plano-de-acao-para-conformidade-com-a-rn-518-da-ans",
+      "destination": "/blog/artigos/modelo-de-plano-de-acao-para-conformidade-com-a-rn-518-da-ans",
+      "permanent": true
+    },
+    {
+      "source": "/implantacao-e-gestao-de-protocolos-clinicos-e-assustenciais/",
+      "destination": "/blog/artigos/implantacao-e-gestao-de-protocolos-clinicos-e-assustenciais",
+      "permanent": true
+    },
+    {
+      "source": "/rn-507-e-sua-importancia-para-operadoras-de-planos-de-saude/",
+      "destination": "/blog/artigos/rn-507-e-sua-importancia-para-operadoras-de-planos-de-saude",
+      "permanent": true
+    },
+    {
+      "source": "/como-posso-contribuir-para-aumentar-a-seguranca-do-paciente/",
+      "destination": "/blog/artigos/como-posso-contribuir-para-aumentar-a-seguranca-do-paciente",
+      "permanent": true
+    },
+    {
+      "source": "/abril-pela-seguranca-do-paciente-inforhealth-sistemas-saude/",
+      "destination": "/blog/artigos/abril-pela-seguranca-do-paciente-inforhealth-sistemas-saude",
+      "permanent": true
+    },
+    {
+      "source": "/implantacao-e-gestao-de-protocolos-clinicos-e-assustenciais",
+      "destination": "/blog/artigos/implantacao-e-gestao-de-protocolos-clinicos-e-assustenciais",
+      "permanent": true
+    },
+    {
+      "source": "/rn-507-e-sua-importancia-para-operadoras-de-planos-de-saude",
+      "destination": "/blog/artigos/rn-507-e-sua-importancia-para-operadoras-de-planos-de-saude",
+      "permanent": true
+    },
+    {
+      "source": "/como-posso-contribuir-para-aumentar-a-seguranca-do-paciente",
+      "destination": "/blog/artigos/como-posso-contribuir-para-aumentar-a-seguranca-do-paciente",
+      "permanent": true
+    },
+    {
+      "source": "/abril-pela-seguranca-do-paciente-inforhealth-sistemas-saude",
+      "destination": "/blog/artigos/abril-pela-seguranca-do-paciente-inforhealth-sistemas-saude",
+      "permanent": true
+    },
+    {
+      "source": "/conheca-os-principais-indicadores-de-qualidade-hospitalar/",
+      "destination": "/blog/artigos/conheca-os-principais-indicadores-de-qualidade-hospitalar",
+      "permanent": true
+    },
+    {
+      "source": "/conheca-os-principais-indicadores-de-qualidade-hospitalar",
+      "destination": "/blog/artigos/conheca-os-principais-indicadores-de-qualidade-hospitalar",
+      "permanent": true
+    },
+    {
+      "source": "/lideranca-em-saude-a-evolucao-dos-sistemas-de-saude/",
+      "destination": "/blog/artigos/lideranca-em-saude-a-evolucao-dos-sistemas-de-saude",
+      "permanent": true
+    },
+    {
+      "source": "/modelo-de-criacao-e-gestao-de-indicadores-de-saude/",
+      "destination": "/blog/artigos/modelo-de-criacao-e-gestao-de-indicadores-de-saude",
+      "permanent": true
+    },
+    {
+      "source": "/lideranca-em-saude-a-evolucao-dos-sistemas-de-saude",
+      "destination": "/blog/artigos/lideranca-em-saude-a-evolucao-dos-sistemas-de-saude",
+      "permanent": true
+    },
+    {
+      "source": "/modelo-de-criacao-e-gestao-de-indicadores-de-saude",
+      "destination": "/blog/artigos/modelo-de-criacao-e-gestao-de-indicadores-de-saude",
+      "permanent": true
+    },
+    {
+      "source": "/mentoria-auditoria-interna-e-gestao-da-qualidade/",
+      "destination": "/cursos/mentoria-auditoria-qualidade",
+      "permanent": true
+    },
+    {
+      "source": "/mentoria-auditoria-interna-e-gestao-da-qualidade",
+      "destination": "/cursos/mentoria-auditoria-qualidade",
+      "permanent": true
+    },
+    {
+      "source": "/abril-pela-seguranca-do-paciente-inforhealth/",
+      "destination": "/blog/artigos/abril-pela-seguranca-do-paciente-inforhealth",
+      "permanent": true
+    },
+    {
+      "source": "/governanca-regulatoria-novo-modelo-ans-2026/",
+      "destination": "/blog/artigos/governanca-regulatoria-novo-modelo-ans-2026",
+      "permanent": true
+    },
+    {
+      "source": "/planejamento-estrategico-organizacoes-saude/",
+      "destination": "/blog/artigos/planejamento-estrategico-organizacoes-saude",
+      "permanent": true
+    },
+    {
+      "source": "/gestao-hospitalar-inovacoes-qualidade-saude/",
+      "destination": "/blog/artigos/gestao-hospitalar-inovacoes-qualidade-saude",
+      "permanent": true
+    },
+    {
+      "source": "/principais-desafios-na-implementacao-do-drg/",
+      "destination": "/blog/artigos/principais-desafios-na-implementacao-do-drg",
+      "permanent": true
+    },
+    {
+      "source": "/modelo-para-construcao-de-protocolo-clinico/",
+      "destination": "/blog/artigos/modelo-para-construcao-de-protocolo-clinico",
+      "permanent": true
+    },
+    {
+      "source": "/abril-pela-seguranca-do-paciente-inforhealth",
+      "destination": "/blog/artigos/abril-pela-seguranca-do-paciente-inforhealth",
+      "permanent": true
+    },
+    {
+      "source": "/blog_inforhealth-educacao-excelencia-saude/",
+      "destination": "/blog",
+      "permanent": true
+    },
+    {
+      "source": "/curso-governanca-regulatoria-ans-2026-2028/",
+      "destination": "/cursos/governanca-regulatoria-ans-2026-2028",
+      "permanent": true
+    },
+    {
+      "source": "/curso-formacao-gestao-contratos-negociacao/",
+      "destination": "/cursos/formacao-gestao-contratos-negociacao",
+      "permanent": true
+    },
+    {
+      "source": "/lideranca-saude-estrategia-execucao-result/",
+      "destination": "/blog/artigos/lideranca-saude-estrategia-execucao-result",
+      "permanent": true
+    },
+    {
+      "source": "/governanca-regulatoria-novo-modelo-ans-2026",
+      "destination": "/blog/artigos/governanca-regulatoria-novo-modelo-ans-2026",
+      "permanent": true
+    },
+    {
+      "source": "/planejamento-estrategico-organizacoes-saude",
+      "destination": "/blog/artigos/planejamento-estrategico-organizacoes-saude",
+      "permanent": true
+    },
+    {
+      "source": "/gestao-hospitalar-inovacoes-qualidade-saude",
+      "destination": "/blog/artigos/gestao-hospitalar-inovacoes-qualidade-saude",
+      "permanent": true
+    },
+    {
+      "source": "/principais-desafios-na-implementacao-do-drg",
+      "destination": "/blog/artigos/principais-desafios-na-implementacao-do-drg",
+      "permanent": true
+    },
+    {
+      "source": "/modelo-para-construcao-de-protocolo-clinico",
+      "destination": "/blog/artigos/modelo-para-construcao-de-protocolo-clinico",
+      "permanent": true
+    },
+    {
+      "source": "/blog_inforhealth-educacao-excelencia-saude",
+      "destination": "/blog",
+      "permanent": true
+    },
+    {
+      "source": "/curso-gestao-estrategica-do-corpo-clinico/",
+      "destination": "/cursos/gestao-estrategica-corpo-clinico",
+      "permanent": true
+    },
+    {
+      "source": "/curso-governanca-regulatoria-ans-2026-2028",
+      "destination": "/cursos/governanca-regulatoria-ans-2026-2028",
+      "permanent": true
+    },
+    {
+      "source": "/curso-formacao-gestao-contratos-negociacao",
+      "destination": "/cursos/formacao-gestao-contratos-negociacao",
+      "permanent": true
+    },
+    {
+      "source": "/lideranca-saude-estrategia-execucao-result",
+      "destination": "/blog/artigos/lideranca-saude-estrategia-execucao-result",
+      "permanent": true
+    },
+    {
+      "source": "/curso-gestao-estrategica-do-corpo-clinico",
+      "destination": "/cursos/gestao-estrategica-corpo-clinico",
+      "permanent": true
+    },
+    {
+      "source": "/curso-gestao-ciclo-receitas-hospitalares/",
+      "destination": "/cursos/gestao-ciclo-receitas-hospitalares",
+      "permanent": true
+    },
+    {
+      "source": "/curso-governanca-regulatorio-estrategica/",
+      "destination": "/cursos/governanca-regulatoria-ans-2026-2028",
+      "permanent": true
+    },
+    {
+      "source": "/curso-mentoria-auditor-interno-qualidade/",
+      "destination": "/cursos/mentoria-auditor-interno-qualidade",
+      "permanent": true
+    },
+    {
+      "source": "/curso-gestao-projetos-metodologias-ageis/",
+      "destination": "/cursos/gestao-projetos-metodologias-ageis",
+      "permanent": true
+    },
+    {
+      "source": "/auditoria-vantagens-para-sua-organizacao/",
+      "destination": "/blog/artigos/auditoria-vantagens-para-sua-organizacao",
+      "permanent": true
+    },
+    {
+      "source": "/curso-gestao-ciclo-receitas-hospitalares",
+      "destination": "/cursos/gestao-ciclo-receitas-hospitalares",
+      "permanent": true
+    },
+    {
+      "source": "/curso-gestao-tecnologias-infraestrutura/",
+      "destination": "/cursos/gestao-tecnologias-infraestrutura",
+      "permanent": true
+    },
+    {
+      "source": "/curso-recursos-glosas-saude-suplementar/",
+      "destination": "/cursos/recursos-glosas-saude-suplementar",
+      "permanent": true
+    },
+    {
+      "source": "/curso-governanca-regulatorio-estrategica",
+      "destination": "/cursos/governanca-regulatoria-ans-2026-2028",
+      "permanent": true
+    },
+    {
+      "source": "/curso-mentoria-auditor-interno-qualidade",
+      "destination": "/cursos/mentoria-auditor-interno-qualidade",
+      "permanent": true
+    },
+    {
+      "source": "/curso-governanca-compliance-acreditacao/",
+      "destination": "/cursos/governanca-compliance-acreditacao",
+      "permanent": true
+    },
+    {
+      "source": "/curso-gestao-projetos-metodologias-ageis",
+      "destination": "/cursos/gestao-projetos-metodologias-ageis",
+      "permanent": true
+    },
+    {
+      "source": "/treinamentos-para-instituicoes-de-saude/",
+      "destination": "/blog/artigos/treinamentos-para-instituicoes-de-saude",
+      "permanent": true
+    },
+    {
+      "source": "/acreditacao-ona-para-o-sistema-de-saude/",
+      "destination": "/blog/artigos/acreditacao-ona-para-o-sistema-de-saude",
+      "permanent": true
+    },
+    {
+      "source": "/auditoria-vantagens-para-sua-organizacao",
+      "destination": "/blog/artigos/auditoria-vantagens-para-sua-organizacao",
+      "permanent": true
+    },
+    {
+      "source": "/curso-governanca-360-saude-suplementar/",
+      "destination": "/cursos/governanca-360-saude-suplementar",
+      "permanent": true
+    },
+    {
+      "source": "/curso-gestao-estrategica-corpo-clinico/",
+      "destination": "/cursos/gestao-estrategica-corpo-clinico",
+      "permanent": true
+    },
+    {
+      "source": "/curso-gestao-tecnologias-infraestrutura",
+      "destination": "/cursos/gestao-tecnologias-infraestrutura",
+      "permanent": true
+    },
+    {
+      "source": "/curso-recursos-glosas-saude-suplementar",
+      "destination": "/cursos/recursos-glosas-saude-suplementar",
+      "permanent": true
+    },
+    {
+      "source": "/curso-governanca-compliance-acreditacao",
+      "destination": "/cursos/governanca-compliance-acreditacao",
+      "permanent": true
+    },
+    {
+      "source": "/treinamentos-para-instituicoes-de-saude",
+      "destination": "/blog/artigos/treinamentos-para-instituicoes-de-saude",
+      "permanent": true
+    },
+    {
+      "source": "/acreditacao-ona-para-o-sistema-de-saude",
+      "destination": "/blog/artigos/acreditacao-ona-para-o-sistema-de-saude",
+      "permanent": true
+    },
+    {
+      "source": "/contratos-negociacao-saude-suplementar/",
+      "destination": "/blog/artigos/contratos-negociacao-saude-suplementar",
+      "permanent": true
+    },
+    {
+      "source": "/governanca-clinica-vbhc-e-mbe-a-triade/",
+      "destination": "/blog/artigos/governanca-clinica-vbhc-e-mbe-a-triade",
+      "permanent": true
+    },
+    {
+      "source": "/instrumento-de-gestao-do-corpo-clinico/",
+      "destination": "/blog/artigos/instrumento-de-gestao-do-corpo-clinico",
+      "permanent": true
+    },
+    {
+      "source": "/curso-governanca-360-saude-suplementar",
+      "destination": "/cursos/governanca-360-saude-suplementar",
+      "permanent": true
+    },
+    {
+      "source": "/curso-gestao-estrategica-corpo-clinico",
+      "destination": "/cursos/gestao-estrategica-corpo-clinico",
+      "permanent": true
+    },
+    {
+      "source": "/curso-custos-assistenciais-operadoras/",
+      "destination": "/cursos/custos-assistenciais-operadoras",
+      "permanent": true
+    },
+    {
+      "source": "/curso-regulamentacao-planos-saude-ans/",
+      "destination": "/cursos/regulamentacao-planos-saude-ans",
+      "permanent": true
+    },
+    {
+      "source": "/curso-planejamento-gestao-estrategica/",
+      "destination": "/cursos/planejamento-gestao-estrategica",
+      "permanent": true
+    },
+    {
+      "source": "/curso-gestao-suprimentos-hospitalares/",
+      "destination": "/cursos/gestao-suprimentos-hospitalares",
+      "permanent": true
+    },
+    {
+      "source": "/curso-gestao-assistencia-odontologica/",
+      "destination": "/cursos/gestao-assistencia-odontologica",
+      "permanent": true
+    },
+    {
+      "source": "/contratos-negociacao-saude-suplementar",
+      "destination": "/blog/artigos/contratos-negociacao-saude-suplementar",
+      "permanent": true
+    },
+    {
+      "source": "/garantindo-a-seguranca-no-atendimento/",
+      "destination": "/blog/artigos/garantindo-a-seguranca-no-atendimento",
+      "permanent": true
+    },
+    {
+      "source": "/seguranca-paciente-excelencia-cuidado/",
+      "destination": "/blog/artigos/seguranca-paciente-excelencia-cuidado",
+      "permanent": true
+    },
+    {
+      "source": "/governanca-clinica-vbhc-e-mbe-a-triade",
+      "destination": "/blog/artigos/governanca-clinica-vbhc-e-mbe-a-triade",
+      "permanent": true
+    },
+    {
+      "source": "/instrumento-de-gestao-do-corpo-clinico",
+      "destination": "/blog/artigos/instrumento-de-gestao-do-corpo-clinico",
+      "permanent": true
+    },
+    {
+      "source": "/curso-custos-assistenciais-operadoras",
+      "destination": "/cursos/custos-assistenciais-operadoras",
+      "permanent": true
+    },
+    {
+      "source": "/curso-regulamentacao-planos-saude-ans",
+      "destination": "/cursos/regulamentacao-planos-saude-ans",
+      "permanent": true
+    },
+    {
+      "source": "/curso-planejamento-gestao-estrategica",
+      "destination": "/cursos/planejamento-gestao-estrategica",
+      "permanent": true
+    },
+    {
+      "source": "/curso-gestao-suprimentos-hospitalares",
+      "destination": "/cursos/gestao-suprimentos-hospitalares",
+      "permanent": true
+    },
+    {
+      "source": "/curso-gestao-orcamentaria-financeira/",
+      "destination": "/cursos/gestao-orcamentaria-financeira",
+      "permanent": true
+    },
+    {
+      "source": "/curso-gestao-assistencia-odontologica",
+      "destination": "/cursos/gestao-assistencia-odontologica",
+      "permanent": true
+    },
+    {
+      "source": "/o-papel-do-manual-ona-para-hospitais/",
+      "destination": "/blog/artigos/o-papel-do-manual-ona-para-hospitais",
+      "permanent": true
+    },
+    {
+      "source": "/custos-assistenciais-operadoras-blog/",
+      "destination": "/blog/artigos/custos-assistenciais-operadoras-blog",
+      "permanent": true
+    },
+    {
+      "source": "/medico-hospitalista-e-sua-relevancia/",
+      "destination": "/blog/artigos/medico-hospitalista-e-sua-relevancia",
+      "permanent": true
+    },
+    {
+      "source": "/garantindo-a-seguranca-no-atendimento",
+      "destination": "/blog/artigos/garantindo-a-seguranca-no-atendimento",
+      "permanent": true
+    },
+    {
+      "source": "/seguranca-paciente-excelencia-cuidado",
+      "destination": "/blog/artigos/seguranca-paciente-excelencia-cuidado",
+      "permanent": true
+    },
+    {
+      "source": "/gestao-estrategica-do-corpo-clinico/",
+      "destination": "/cursos/gestao-estrategica-corpo-clinico",
+      "permanent": true
+    },
+    {
+      "source": "/curso-gestao-orcamentaria-financeira",
+      "destination": "/cursos/gestao-orcamentaria-financeira",
+      "permanent": true
+    },
+    {
+      "source": "/curso-lideranca-profissionais-saude/",
+      "destination": "/cursos/lideranca-profissionais-saude",
+      "permanent": true
+    },
+    {
+      "source": "/gestao-de-equipes-na-saude-burnoout/",
+      "destination": "/blog/artigos/gestao-de-equipes-na-saude-burnoout",
+      "permanent": true
+    },
+    {
+      "source": "/o-papel-do-manual-ona-para-hospitais",
+      "destination": "/blog/artigos/o-papel-do-manual-ona-para-hospitais",
+      "permanent": true
+    },
+    {
+      "source": "/custos-assistenciais-operadoras-blog",
+      "destination": "/blog/artigos/custos-assistenciais-operadoras-blog",
+      "permanent": true
+    },
+    {
+      "source": "/medico-hospitalista-e-sua-relevancia",
+      "destination": "/blog/artigos/medico-hospitalista-e-sua-relevancia",
+      "permanent": true
+    },
+    {
+      "source": "/curso-plano-terapeutico-na-pratica/",
+      "destination": "/cursos/plano-terapeutico-na-pratica",
+      "permanent": true
+    },
+    {
+      "source": "/gestao-estrategica-do-corpo-clinico",
+      "destination": "/cursos/gestao-estrategica-corpo-clinico",
+      "permanent": true
+    },
+    {
+      "source": "/curso-mentoria-auditoria-qualidade/",
+      "destination": "/cursos/mentoria-auditoria-qualidade",
+      "permanent": true
+    },
+    {
+      "source": "/cursos/drg-do-conceito-a-aplicacao/",
+      "destination": "/cursos/drg-conceito-aplicacao",
+      "permanent": true
+    },
+    {
+      "source": "/governanca-regulatorio-estrategica/",
+      "destination": "/cursos/governanca-regulatoria-ans-2026-2028",
+      "permanent": true
+    },
+    {
+      "source": "/curso-ferramentas-gestao-qualidade/",
+      "destination": "/cursos/ferramentas-gestao-qualidade",
+      "permanent": true
+    },
+    {
+      "source": "/curso-lideranca-profissionais-saude",
+      "destination": "/cursos/lideranca-profissionais-saude",
+      "permanent": true
+    },
+    {
+      "source": "/gestao-de-equipes-na-saude-burnoout",
+      "destination": "/blog/artigos/gestao-de-equipes-na-saude-burnoout",
+      "permanent": true
+    },
+    {
+      "source": "/curso-formacao-auditores-ona-2026/",
+      "destination": "/cursos/formacao-auditores-ona-2026",
+      "permanent": true
+    },
+    {
+      "source": "/curso-plano-terapeutico-na-pratica",
+      "destination": "/cursos/plano-terapeutico-na-pratica",
+      "permanent": true
+    },
+    {
+      "source": "/curso-mentoria-auditoria-qualidade",
+      "destination": "/cursos/mentoria-auditoria-qualidade",
+      "permanent": true
+    },
+    {
+      "source": "/curso-drg-do-conceito-a-aplicacao/",
+      "destination": "/cursos/drg-conceito-aplicacao",
+      "permanent": true
+    },
+    {
+      "source": "/cursos/drg-do-conceito-a-aplicacao",
+      "destination": "/cursos/drg-conceito-aplicacao",
+      "permanent": true
+    },
+    {
+      "source": "/curso-gestao-indicadores-em-saude/",
+      "destination": "/cursos/gestao-indicadores-em-saude",
+      "permanent": true
+    },
+    {
+      "source": "/governanca-regulatorio-estrategica",
+      "destination": "/cursos/governanca-regulatoria-ans-2026-2028",
+      "permanent": true
+    },
+    {
+      "source": "/curso-gestao-contratos-negociacao/",
+      "destination": "/cursos/gestao-contratos-negociacao",
+      "permanent": true
+    },
+    {
+      "source": "/curso-gestao-faturamento-em-saude/",
+      "destination": "/cursos/gestao-faturamento-em-saude",
+      "permanent": true
+    },
+    {
+      "source": "/curso-ferramentas-gestao-qualidade",
+      "destination": "/cursos/ferramentas-gestao-qualidade",
+      "permanent": true
+    },
+    {
+      "source": "/curso-formacao-auditores-ona-2026",
+      "destination": "/cursos/formacao-auditores-ona-2026",
+      "permanent": true
+    },
+    {
+      "source": "/curso-drg-do-conceito-a-aplicacao",
+      "destination": "/cursos/drg-conceito-aplicacao",
+      "permanent": true
+    },
+    {
+      "source": "/curso-gestao-indicadores-em-saude",
+      "destination": "/cursos/gestao-indicadores-em-saude",
+      "permanent": true
+    },
+    {
+      "source": "/curso-gestao-contratos-negociacao",
+      "destination": "/cursos/gestao-contratos-negociacao",
+      "permanent": true
+    },
+    {
+      "source": "/curso-gestao-faturamento-em-saude",
+      "destination": "/cursos/gestao-faturamento-em-saude",
+      "permanent": true
+    },
+    {
+      "source": "/curso-gestao-eficiente-em-saude/",
+      "destination": "/cursos/gestao-eficiente-em-saude",
+      "permanent": true
+    },
+    {
+      "source": "/excelencia-operacional-em-saude/",
+      "destination": "/blog/artigos/excelencia-operacional-em-saude",
+      "permanent": true
+    },
+    {
+      "source": "/drg-e-o-mercado-futuro-na-saude/",
+      "destination": "/blog/artigos/drg-e-o-mercado-futuro-na-saude",
+      "permanent": true
+    },
+    {
+      "source": "/curso-gestao-eficiente-em-saude",
+      "destination": "/cursos/gestao-eficiente-em-saude",
+      "permanent": true
+    },
+    {
+      "source": "/curso-auditoria-contas-medicas/",
+      "destination": "/cursos/auditoria-contas-medicas",
+      "permanent": true
+    },
+    {
+      "source": "/excelencia-operacional-em-saude",
+      "destination": "/blog/artigos/excelencia-operacional-em-saude",
+      "permanent": true
+    },
+    {
+      "source": "/drg-e-o-mercado-futuro-na-saude",
+      "destination": "/blog/artigos/drg-e-o-mercado-futuro-na-saude",
+      "permanent": true
+    },
+    {
+      "source": "/curso-gestao-rede-credenciada/",
+      "destination": "/cursos/gestao-rede-credenciada",
+      "permanent": true
+    },
+    {
+      "source": "/curso-gestao-pessoas-em-saude/",
+      "destination": "/cursos/gestao-pessoas-em-saude",
+      "permanent": true
+    },
+    {
+      "source": "/curso-auditoria-contas-medicas",
+      "destination": "/cursos/auditoria-contas-medicas",
+      "permanent": true
+    },
+    {
+      "source": "/curso-scih-seguranca-paciente/",
+      "destination": "/cursos/scih-seguranca-paciente",
+      "permanent": true
+    },
+    {
+      "source": "/curso-gestao-rede-credenciada",
+      "destination": "/cursos/gestao-rede-credenciada",
+      "permanent": true
+    },
+    {
+      "source": "/curso-drg-conceito-aplicacao/",
+      "destination": "/cursos/drg-conceito-aplicacao",
+      "permanent": true
+    },
+    {
+      "source": "/curso-gestao-pessoas-em-saude",
+      "destination": "/cursos/gestao-pessoas-em-saude",
+      "permanent": true
+    },
+    {
+      "source": "/curso-scih-seguranca-paciente",
+      "destination": "/cursos/scih-seguranca-paciente",
+      "permanent": true
+    },
+    {
+      "source": "/curso-drg-conceito-aplicacao",
+      "destination": "/cursos/drg-conceito-aplicacao",
+      "permanent": true
+    },
+    {
+      "source": "/drg-do-conceito-a-aplicacao/",
+      "destination": "/cursos/drg-conceito-aplicacao",
+      "permanent": true
+    },
+    {
+      "source": "/curso-workshop-telemedicina/",
+      "destination": "/cursos/workshop-telemedicina",
+      "permanent": true
+    },
+    {
+      "source": "/curso-seguranca-do-paciente/",
+      "destination": "/cursos/seguranca-do-paciente",
+      "permanent": true
+    },
+    {
+      "source": "/drg-do-conceito-a-aplicacao",
+      "destination": "/cursos/drg-conceito-aplicacao",
+      "permanent": true
+    },
+    {
+      "source": "/curso-workshop-telemedicina",
+      "destination": "/cursos/workshop-telemedicina",
+      "permanent": true
+    },
+    {
+      "source": "/curso-seguranca-do-paciente",
+      "destination": "/cursos/seguranca-do-paciente",
+      "permanent": true
+    },
+    {
+      "source": "/curso-jornada-do-paciente/",
+      "destination": "/cursos/jornada-do-paciente",
+      "permanent": true
+    },
+    {
+      "source": "/academia-corporativa-360/",
+      "destination": "/academia-360",
+      "permanent": true
+    },
+    {
+      "source": "/curso-governanca-clinica/",
+      "destination": "/cursos/governanca-clinica",
+      "permanent": true
+    },
+    {
+      "source": "/curso-marketing-em-saude/",
+      "destination": "/cursos/marketing-em-saude",
+      "permanent": true
+    },
+    {
+      "source": "/curso-jornada-do-paciente",
+      "destination": "/cursos/jornada-do-paciente",
+      "permanent": true
+    },
+    {
+      "source": "/academia-corporativa-360",
+      "destination": "/academia-360",
+      "permanent": true
+    },
+    {
+      "source": "/curso-auditoria-clinica/",
+      "destination": "/cursos/auditoria-clinica",
+      "permanent": true
+    },
+    {
+      "source": "/curso-governanca-clinica",
+      "destination": "/cursos/governanca-clinica",
+      "permanent": true
+    },
+    {
+      "source": "/curso-marketing-em-saude",
+      "destination": "/cursos/marketing-em-saude",
+      "permanent": true
+    },
+    {
+      "source": "/curso-auditoria-clinica",
+      "destination": "/cursos/auditoria-clinica",
+      "permanent": true
+    },
+    {
+      "source": "/curso-in-company/",
+      "destination": "/in-company",
+      "permanent": true
+    },
+    {
+      "source": "/guia_drg_pratica/",
+      "destination": "/blog/artigos/guia_drg_pratica",
+      "permanent": true
+    },
+    {
+      "source": "/curso-in-company",
+      "destination": "/in-company",
+      "permanent": true
+    },
+    {
+      "source": "/guia_drg_pratica",
+      "destination": "/blog/artigos/guia_drg_pratica",
+      "permanent": true
+    },
+    {
+      "source": "/lives-abril/",
+      "destination": "/blog/artigos/lives-abril",
+      "permanent": true
+    },
+    {
+      "source": "/lives-abril",
+      "destination": "/blog/artigos/lives-abril",
+      "permanent": true
+    },
+    {
+      "source": "/e-book/",
+      "destination": "/ebook",
+      "permanent": true
+    },
+    {
+      "source": "/e-book",
+      "destination": "/ebook",
+      "permanent": true
     }
   ]
 }

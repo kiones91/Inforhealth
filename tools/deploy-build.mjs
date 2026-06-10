@@ -38,13 +38,8 @@ async function main() {
   await cp(SITE, DIST, { recursive: true });
   await cp(ASSETS, join(DIST, "assets"), { recursive: true });
 
-  // Remove o _redirects do Netlify que conflita com o roteamento da Cloudflare
-  try {
-    await rm(join(DIST, "_redirects"), { force: true });
-    console.log("Removido dist/_redirects (Netlify) para evitar conflitos na Cloudflare");
-  } catch (err) {
-    console.warn("Aviso: não foi possível remover dist/_redirects:", err);
-  }
+  // Mantém o _redirects para suporte a redirecionamentos nativos na Cloudflare Worker Assets
+
 
   try {
     await stat(join(DIST, "index.html"));
