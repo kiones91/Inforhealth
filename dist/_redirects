@@ -169,6 +169,3 @@
 /e-book /ebook 301
 
 # Netlify — URLs limpas
-/cursos/:slug /cursos/:slug.html 200
-/blog/artigos/:slug /blog/artigos/:slug.html 200
-/* /:splat.html 200

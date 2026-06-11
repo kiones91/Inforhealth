@@ -3,9 +3,16 @@
   "name": "inforhealth",
   "account_id": "0b131555c0c7837faef8b83205e05e54",
   "compatibility_date": "2026-06-08",
+  "routes": [
+    {
+      "pattern": "inforhealth.buffallos.com.br",
+      "custom_domain": true
+    }
+  ],
   "assets": {
     "directory": "./dist",
     "html_handling": "auto-trailing-slash",
     "not_found_handling": "404-page"
   }
 }
+

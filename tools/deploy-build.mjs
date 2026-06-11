@@ -38,8 +38,20 @@ async function main() {
   await cp(SITE, DIST, { recursive: true });
   await cp(ASSETS, join(DIST, "assets"), { recursive: true });
 
-  // Mantém o _redirects para suporte a redirecionamentos nativos na Cloudflare Worker Assets
-
+  // Filtra o _redirects para manter apenas os redirecionamentos 301 (removendo rewrites 200 que conflitam na Cloudflare)
+  try {
+    const redirectsPath = join(DIST, "_redirects");
+    const fs = await import("node:fs/promises");
+    const content = await fs.readFile(redirectsPath, "utf8");
+    const filteredLines = content.split("\n").filter(line => {
+      const trimmed = line.trim();
+      return !trimmed || trimmed.startsWith("#") || trimmed.includes("301");
+    });
+    await fs.writeFile(redirectsPath, filteredLines.join("\n"), "utf8");
+    console.log("Filtrado dist/_redirects para remover rewrites 200 (Netlify)");
+  } catch (err) {
+    console.warn("Aviso: não foi possível filtrar dist/_redirects:", err);
+  }
 
   try {
     await stat(join(DIST, "index.html"));
